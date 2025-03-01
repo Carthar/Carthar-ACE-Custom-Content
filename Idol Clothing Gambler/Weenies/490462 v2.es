@@ -1,8 +1,8 @@
 Refuse: Trade Note (250,000) (20630)
     - TurnToTarget
-    - InqQuest: PaidExchanger@360
+    - InqQuest: PaidExchanger
         QuestSuccess:
-            - Tell: You've already paid! Now all I need from you is proof that you are ready to unleash the exitement of dressing up your idol of the recluse doll.
+            - Tell: You've already paid! Now all I need from you is proof that you are ready to unleash the excitement of dressing up your idol of the recluse doll.
         QuestFailure:
             - InqOwnsItems: Trade Note (250,000) (20630), 10
                 TestSuccess:
@@ -18,7 +18,7 @@ Use:
 
 Refuse: Aetherium Core Fragment (41226)
     - TurnToTarget
-    - InqQuest: PaidExchanger@361
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: Aetherium Core Fragment (41226)
@@ -28,7 +28,7 @@ Refuse: Aetherium Core Fragment (41226)
 
 Refuse: 490000
     - TurnToTarget
-    - InqQuest: PaidExchanger@362
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490000
@@ -38,7 +38,7 @@ Refuse: 490000
 
 Refuse: 490001
     - TurnToTarget
-    - InqQuest: PaidExchanger@363
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490001
@@ -48,7 +48,7 @@ Refuse: 490001
 
 Refuse: 490002
     - TurnToTarget
-    - InqQuest: PaidExchanger@364
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490002
@@ -58,7 +58,7 @@ Refuse: 490002
 
 Refuse: 490003
     - TurnToTarget
-    - InqQuest: PaidExchanger@365
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490003
@@ -68,7 +68,7 @@ Refuse: 490003
 
 Refuse: 490004
     - TurnToTarget
-    - InqQuest: PaidExchanger@366
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490004
@@ -78,7 +78,7 @@ Refuse: 490004
 
 Refuse: 490005
     - TurnToTarget
-    - InqQuest: PaidExchanger@367
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490005
@@ -88,7 +88,7 @@ Refuse: 490005
 
 Refuse: 490006
     - TurnToTarget
-    - InqQuest: PaidExchanger@368
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490006
@@ -98,7 +98,7 @@ Refuse: 490006
 
 Refuse: 490007
     - TurnToTarget
-    - InqQuest: PaidExchanger@369
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490007
@@ -108,7 +108,7 @@ Refuse: 490007
 
 Refuse: 490008
     - TurnToTarget
-    - InqQuest: PaidExchanger@370
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490008
@@ -118,7 +118,7 @@ Refuse: 490008
 
 Refuse: 490009
     - TurnToTarget
-    - InqQuest: PaidExchanger@371
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490009
@@ -128,7 +128,7 @@ Refuse: 490009
 
 Refuse: 490010
     - TurnToTarget
-    - InqQuest: PaidExchanger@372
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490010
@@ -138,7 +138,7 @@ Refuse: 490010
 
 Refuse: 490011
     - TurnToTarget
-    - InqQuest: PaidExchanger@373
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490011
@@ -148,7 +148,7 @@ Refuse: 490011
 
 Refuse: 490012
     - TurnToTarget
-    - InqQuest: PaidExchanger@374
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490012
@@ -158,7 +158,7 @@ Refuse: 490012
 
 Refuse: 490013
     - TurnToTarget
-    - InqQuest: PaidExchanger@375
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490013
@@ -168,7 +168,7 @@ Refuse: 490013
 
 Refuse: 490014
     - TurnToTarget
-    - InqQuest: PaidExchanger@376
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490014
@@ -178,7 +178,7 @@ Refuse: 490014
 
 Refuse: 490015
     - TurnToTarget
-    - InqQuest: PaidExchanger@377
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490015
@@ -188,7 +188,7 @@ Refuse: 490015
 
 Refuse: 490016
     - TurnToTarget
-    - InqQuest: PaidExchanger@378
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490016
@@ -198,7 +198,7 @@ Refuse: 490016
 
 Refuse: 490017
     - TurnToTarget
-    - InqQuest: PaidExchanger@379
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490017
@@ -208,7 +208,7 @@ Refuse: 490017
 
 Refuse: 490018
     - TurnToTarget
-    - InqQuest: PaidExchanger@380
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490018
@@ -218,7 +218,7 @@ Refuse: 490018
 
 Refuse: 490019
     - TurnToTarget
-    - InqQuest: PaidExchanger@381
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490019
@@ -228,7 +228,7 @@ Refuse: 490019
 
 Refuse: 490020
     - TurnToTarget
-    - InqQuest: PaidExchanger@382
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490020
@@ -238,7 +238,7 @@ Refuse: 490020
 
 Refuse: 490021
     - TurnToTarget
-    - InqQuest: PaidExchanger@383
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490021
@@ -248,7 +248,7 @@ Refuse: 490021
 
 Refuse: 490022
     - TurnToTarget
-    - InqQuest: PaidExchanger@384
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490022
@@ -258,7 +258,7 @@ Refuse: 490022
 
 Refuse: 490023
     - TurnToTarget
-    - InqQuest: PaidExchanger@385
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490023
@@ -268,7 +268,7 @@ Refuse: 490023
 
 Refuse: 490024
     - TurnToTarget
-    - InqQuest: PaidExchanger@386
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490024
@@ -278,7 +278,7 @@ Refuse: 490024
 
 Refuse: 490025
     - TurnToTarget
-    - InqQuest: PaidExchanger@387
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490025
@@ -288,7 +288,7 @@ Refuse: 490025
 
 Refuse: 490026
     - TurnToTarget
-    - InqQuest: PaidExchanger@388
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490026
@@ -298,7 +298,7 @@ Refuse: 490026
 
 Refuse: 490027
     - TurnToTarget
-    - InqQuest: PaidExchanger@389
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490027
@@ -308,7 +308,7 @@ Refuse: 490027
 
 Refuse: 490028
     - TurnToTarget
-    - InqQuest: PaidExchanger@390
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490028
@@ -318,7 +318,7 @@ Refuse: 490028
 
 Refuse: 490029
     - TurnToTarget
-    - InqQuest: PaidExchanger@391
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490029
@@ -328,7 +328,7 @@ Refuse: 490029
 
 Refuse: 490030
     - TurnToTarget
-    - InqQuest: PaidExchanger@392
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490030
@@ -338,7 +338,7 @@ Refuse: 490030
 
 Refuse: 490031
     - TurnToTarget
-    - InqQuest: PaidExchanger@393
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490031
@@ -348,7 +348,7 @@ Refuse: 490031
 
 Refuse: 490032
     - TurnToTarget
-    - InqQuest: PaidExchanger@394
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490032
@@ -358,7 +358,7 @@ Refuse: 490032
 
 Refuse: 490033
     - TurnToTarget
-    - InqQuest: PaidExchanger@395
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490033
@@ -368,7 +368,7 @@ Refuse: 490033
 
 Refuse: 490034
     - TurnToTarget
-    - InqQuest: PaidExchanger@396
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490034
@@ -378,7 +378,7 @@ Refuse: 490034
 
 Refuse: 490035
     - TurnToTarget
-    - InqQuest: PaidExchanger@397
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490035
@@ -388,7 +388,7 @@ Refuse: 490035
 
 Refuse: 490036
     - TurnToTarget
-    - InqQuest: PaidExchanger@398
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490036
@@ -398,7 +398,7 @@ Refuse: 490036
 
 Refuse: 490037
     - TurnToTarget
-    - InqQuest: PaidExchanger@399
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490037
@@ -408,7 +408,7 @@ Refuse: 490037
 
 Refuse: 490038
     - TurnToTarget
-    - InqQuest: PaidExchanger@400
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490038
@@ -418,7 +418,7 @@ Refuse: 490038
 
 Refuse: 490039
     - TurnToTarget
-    - InqQuest: PaidExchanger@401
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490039
@@ -428,7 +428,7 @@ Refuse: 490039
 
 Refuse: 490040
     - TurnToTarget
-    - InqQuest: PaidExchanger@402
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490040
@@ -438,7 +438,7 @@ Refuse: 490040
 
 Refuse: 490041
     - TurnToTarget
-    - InqQuest: PaidExchanger@403
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490041
@@ -448,7 +448,7 @@ Refuse: 490041
 
 Refuse: 490042
     - TurnToTarget
-    - InqQuest: PaidExchanger@404
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490042
@@ -458,7 +458,7 @@ Refuse: 490042
 
 Refuse: 490043
     - TurnToTarget
-    - InqQuest: PaidExchanger@405
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490043
@@ -468,7 +468,7 @@ Refuse: 490043
 
 Refuse: 490044
     - TurnToTarget
-    - InqQuest: PaidExchanger@406
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490044
@@ -478,7 +478,7 @@ Refuse: 490044
 
 Refuse: 490045
     - TurnToTarget
-    - InqQuest: PaidExchanger@407
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490045
@@ -488,7 +488,7 @@ Refuse: 490045
 
 Refuse: 490046
     - TurnToTarget
-    - InqQuest: PaidExchanger@408
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490046
@@ -498,7 +498,7 @@ Refuse: 490046
 
 Refuse: 490047
     - TurnToTarget
-    - InqQuest: PaidExchanger@409
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490047
@@ -508,7 +508,7 @@ Refuse: 490047
 
 Refuse: 490048
     - TurnToTarget
-    - InqQuest: PaidExchanger@410
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490048
@@ -518,7 +518,7 @@ Refuse: 490048
 
 Refuse: 490049
     - TurnToTarget
-    - InqQuest: PaidExchanger@411
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490049
@@ -528,7 +528,7 @@ Refuse: 490049
 
 Refuse: 490050
     - TurnToTarget
-    - InqQuest: PaidExchanger@412
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490050
@@ -538,7 +538,7 @@ Refuse: 490050
 
 Refuse: 490051
     - TurnToTarget
-    - InqQuest: PaidExchanger@413
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490051
@@ -548,7 +548,7 @@ Refuse: 490051
 
 Refuse: 490052
     - TurnToTarget
-    - InqQuest: PaidExchanger@414
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490052
@@ -558,7 +558,7 @@ Refuse: 490052
 
 Refuse: 490053
     - TurnToTarget
-    - InqQuest: PaidExchanger@415
+    - InqQuest: PaidExchanger
         QuestSuccess:
             - EraseQuest: PaidExchanger
             - TakeItems: 490053
@@ -778,7 +778,7 @@ GotoSet: pick_from_bag, Probability: 0.99
     - Give: 490052
     - Goto: final_text
 
-GotoSet: pick_from_bag,
+GotoSet: pick_from_bag
     - Give: 490053
     - Goto: final_text
 
