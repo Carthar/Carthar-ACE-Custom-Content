@@ -1,6 +1,6 @@
 Custom Content developed for ACE.
 This content is free to use for any custom server.   It is built for base ace with no mods.
-Please credit the original author.
+Please credit the original author for the work and all derivative works.
 
 
 Standard disclaimer:  
