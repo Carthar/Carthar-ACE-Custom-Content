@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230023;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230023, '230023 Virindi Raid Leader', 10, '2024-12-27 11:19:19') /* Creature */;
+VALUES (230023, '230023 Virindi Raid Leader', 10, '2025-10-20 06:47:34') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230023,   1,         16) /* ItemType - Creature */
@@ -86,7 +86,7 @@ VALUES (230023,   1, 0x020009F6) /* Setup */
      , (230023,   7, 0x10000336) /* Clothingbase */
      , (230023,   8, 0x06001227) /* Icon */
      , (230023,  22, 0x34000029) /* PhysicsEffectTable */
-;
+     , (230023,  31,     261000) /* LinkedPortalOne */;
 
 INSERT INTO `weenie_properties_body_part` (`object_Id`, `key`, `d_Type`, `d_Val`, `d_Var`, `base_Armor`, `armor_Vs_Slash`, `armor_Vs_Pierce`, `armor_Vs_Bludgeon`, `armor_Vs_Cold`, `armor_Vs_Fire`, `armor_Vs_Acid`, `armor_Vs_Electric`, `armor_Vs_Nether`, `b_h`, `h_l_f`, `m_l_f`, `l_l_f`, `h_r_f`, `m_r_f`, `l_r_f`, `h_l_b`, `m_l_b`, `l_l_b`, `h_r_b`, `m_r_b`, `l_r_b`)
 VALUES (230023,  0,  1,  0,    0,  900,  450,  450,  450,  450,  450,  450,  450,    0, 1, 0.33,    0,    0, 0.33,    0,    0, 0.33,    0,    0, 0.33,    0,    0) /* Head - Slash */
@@ -118,6 +118,7 @@ VALUES (230023,  6, 0, 3, 0, 482, 0, 0) /* MeleeDefense         Specialized */
      , (230023, 20, 0, 3, 0, 250, 0, 0) /* Deception           Specialized */
      , (230023, 24, 0, 3, 0,  90, 0, 0) /* Run                 Specialized */
      , (230023, 31, 0, 3, 0, 300, 0, 0) /* CreatureEnchantment  Specialized */
+     , (230023, 32, 0, 2, 0, 380, 0, 0) /* ItemEnchantment          Trained */
      , (230023, 33, 0, 3, 0, 300, 0, 0) /* LifeMagic            Specialized */
      , (230023, 34, 0, 3, 0, 300, 0, 0) /* WarMagic             Specialized */
      , (230023, 45, 0, 3, 0, 580, 0, 0) /* LightWeapons         Specialized */;
@@ -128,7 +129,8 @@ VALUES (230023,  4101,  2.025) /* Champion's Skullduggery */
      , (230023,  3918,    2.2) /* Flammable */
      , (230023,  1834,    2.1) /* Firestorm */
      , (230023,  4246,    2.1) /* MeteorStrike */
-     , (230023,  4274,    2.1) /* Flame Whip */;
+     , (230023,  4274,    2.1) /* Flame Whip */
+     , (230023,   157,      2) /* Summon Primary Portal I */;
 
 INSERT INTO `weenie_properties_emote` (`object_Id`, `category`, `probability`, `weenie_Class_Id`, `style`, `substyle`, `quest`, `vendor_Type`, `min_Health`, `max_Health`)
 VALUES (230023, 15 /* WoundedTaunt */, 1, NULL, NULL, NULL, NULL, NULL, 0.01, 0.25);
@@ -144,7 +146,7 @@ VALUES (@parent_id, 0, 8 /* Say */, 0, 0, NULL, 'We grow tired of playing with t
      , (@parent_id, 5, 1 /* Act */, 0, 1, NULL, 'The virindi raid leader escapes into the safety of portal space.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
      , (@parent_id, 6, 17 /* LocalBroadcast */, 0, 1, NULL, 'A giant projection of a Virindi appears in the distance.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
      , (@parent_id, 7, 72 /* Generate */, 0, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
-     , (@parent_id, 8, 77 /* DeleteSelf */, 0, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+     , (@parent_id, 8, 77 /* DeleteSelf */, 1, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 INSERT INTO `weenie_properties_emote` (`object_Id`, `category`, `probability`, `weenie_Class_Id`, `style`, `substyle`, `quest`, `vendor_Type`, `min_Health`, `max_Health`)
 VALUES (230023, 9 /* Generation */, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
@@ -182,8 +184,7 @@ INSERT INTO `weenie_properties_emote_action` (`emote_Id`, `order`, `type`, `dela
 VALUES (@parent_id, 0, 1 /* Act */, 0, 1, NULL, 'With the defeat of the raid leader, the intensity of battle subsides.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
      , (@parent_id, 1, 17 /* LocalBroadcast */, 0, 1, NULL, 'A giant projection of a Virindi appears in the distance.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
      , (@parent_id, 2, 72 /* Generate */, 0, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
-     , (@parent_id, 3, 77 /* DeleteSelf */, 0, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+     , (@parent_id, 3, 77 /* DeleteSelf */, 1, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 INSERT INTO `weenie_properties_generator` (`object_Id`, `probability`, `weenie_Class_Id`, `delay`, `init_Create`, `max_Create`, `when_Create`, `where_Create`, `stack_Size`, `palette_Id`, `shade`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`)
 VALUES (230023, -1, 260003, 0, 1, 1, 1, 4, -1, 0, 0, 0x11340027, 112.229774, 145.076050, 62.005001, -0.201302, 0.000000, 0.000000, -0.979529) /* Generate projection of Adirred  - Regenerate upon Destruction - Location to (re)Generate: Scatter */;
-
