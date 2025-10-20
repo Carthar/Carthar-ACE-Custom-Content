@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230023;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230023, '230023 Virindi Raid Leader', 10, '2025-10-20 06:47:34') /* Creature */;
+VALUES (230023, '230023 Virindi Raid Leader', 10, '2025-10-20 06:50:30') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230023,   1,         16) /* ItemType - Creature */
@@ -129,8 +129,7 @@ VALUES (230023,  4101,  2.025) /* Champion's Skullduggery */
      , (230023,  3918,    2.2) /* Flammable */
      , (230023,  1834,    2.1) /* Firestorm */
      , (230023,  4246,    2.1) /* MeteorStrike */
-     , (230023,  4274,    2.1) /* Flame Whip */
-     , (230023,   157,      2) /* Summon Primary Portal I */;
+     , (230023,  4274,    2.1) /* Flame Whip */;
 
 INSERT INTO `weenie_properties_emote` (`object_Id`, `category`, `probability`, `weenie_Class_Id`, `style`, `substyle`, `quest`, `vendor_Type`, `min_Health`, `max_Health`)
 VALUES (230023, 15 /* WoundedTaunt */, 1, NULL, NULL, NULL, NULL, NULL, 0.01, 0.25);
