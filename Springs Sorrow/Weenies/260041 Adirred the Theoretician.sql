@@ -12,8 +12,8 @@ VALUES (260041,   1,         16) /* ItemType - Creature */
      , (260041,  16,         32) /* ItemUseable */
      , (260041,  25,        885) /* Level */
      , (260041,  27,          0) /* ArmorType - None */
-     , (260041,  81,          1) /* MaxGeneratedObjects */
-     , (260041,  82,          1) /* InitGeneratedObjects */
+     , (260041,  81,          3) /* MaxGeneratedObjects */
+     , (260041,  82,          3) /* InitGeneratedObjects */
      , (260041,  93,       1032) /* PhysicsState - ReportCollisions, Gravity */
      , (260041,  95,          8) /* RadarblipColor */
      , (260041, 133,          2) /* ShowableOnRadar - ShowMovement */
@@ -211,5 +211,8 @@ VALUES (@parent_id, 0, 10 /* Tell */, 0, 1, NULL, 'So you have come to save thes
      , (@parent_id, 4, 77 /* DeleteSelf */, 0, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 INSERT INTO `weenie_properties_generator` (`object_Id`, `probability`, `weenie_Class_Id`, `delay`, `init_Create`, `max_Create`, `when_Create`, `where_Create`, `stack_Size`, `palette_Id`, `shade`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`)
-VALUES (260041, -1, 230046, 0, 1, 1, 1, 1, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) /* Generate 230046 Lacandrillar the Inculcator) (x1 up to max of 1) - Regenerate upon Destruction - Location to (re)Generate: OnTop */
+VALUES (260041, -1, 260042, 0, 1, 1, 1, 1, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) /* Generate 260042  Lv1 End Boss Controller*/
+     , (260041, -1, 260043, 0, 1, 1, 1, 1, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) /* Generate 260043  Lv2 End Boss Controller*/
+     , (260041, -1, 260044, 0, 1, 1, 1, 1, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) /* Generate 260044  Lv3 End Boss Controller*/
+
 ;
