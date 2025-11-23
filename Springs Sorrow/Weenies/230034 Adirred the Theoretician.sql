@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230034;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230034, '230034 Adirred the Theoretician', 10, '2024-12-22 06:16:52') /* Creature */;
+VALUES (230034, '230034 Adirred the Theoretician', 10, '2025-11-22 06:38:55') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230034,   1,         16) /* ItemType - Creature */
@@ -84,9 +84,7 @@ VALUES (230034,   1, 0x020009F6) /* Setup */
      , (230034,   6, 0x040009B2) /* PaletteBase */
      , (230034,   7, 0x10000336) /* Clothingbase */
      , (230034,   8, 0x06001227) /* Icon */
-     , (230034,  22, 0x34000029) /* PhysicsEffectTable */
-     , (230034,  31,     261000) /* LinkedPortalOne */
-     , (230034,  35,         26) /* DeathTreasureType - Loot Tier: 6 */;
+     , (230034,  22, 0x34000029) /* PhysicsEffectTable */;
 
 INSERT INTO `weenie_properties_body_part` (`object_Id`, `key`, `d_Type`, `d_Val`, `d_Var`, `base_Armor`, `armor_Vs_Slash`, `armor_Vs_Pierce`, `armor_Vs_Bludgeon`, `armor_Vs_Cold`, `armor_Vs_Fire`, `armor_Vs_Acid`, `armor_Vs_Electric`, `armor_Vs_Nether`, `b_h`, `h_l_f`, `m_l_f`, `l_l_f`, `h_r_f`, `m_r_f`, `l_r_f`, `h_l_b`, `m_l_b`, `l_l_b`, `h_r_b`, `m_r_b`, `l_r_b`)
 VALUES (230034,  0,  1,  0,    0,  900,  450,  450,  450,  450,  450,  450,  450,    0, 1, 0.33,    0,    0, 0.33,    0,    0, 0.33,    0,    0, 0.33,    0,    0) /* Head - Slash */
@@ -106,7 +104,7 @@ VALUES (230034,   1, 320, 0, 0) /* Strength */
      , (230034,   6, 400, 0, 0) /* Self */;
 
 INSERT INTO `weenie_properties_attribute_2nd` (`object_Id`, `type`, `init_Level`, `level_From_C_P`, `c_P_Spent`, `current_Level`)
-VALUES (230034,   1,23998650, 0, 0,24000000) /* MaxHealth */
+VALUES (230034,   1,23998650, 0, 0,16000000) /* MaxHealth */
      , (230034,   3,497300, 0, 0,500000) /* MaxStamina */
      , (230034,   5, 39600, 0, 0,40000) /* MaxMana */;
 

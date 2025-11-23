@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230036;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230036, '230036 Virindi Raid Director', 10, '2025-01-04 07:18:13') /* Creature */;
+VALUES (230036, '230036 Virindi Raid Director', 10, '2025-11-22 06:39:35') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230036,   1,         16) /* ItemType - Creature */
@@ -86,8 +86,7 @@ VALUES (230036,   1, 0x020009F6) /* Setup */
      , (230036,   6, 0x040009B2) /* PaletteBase */
      , (230036,   7, 0x10000336) /* Clothingbase */
      , (230036,   8, 0x06001227) /* Icon */
-     , (230036,  22, 0x34000029) /* PhysicsEffectTable */
-     , (230036,  31,     261000) /* LinkedPortalOne */;
+     , (230036,  22, 0x34000029) /* PhysicsEffectTable */;
 
 INSERT INTO `weenie_properties_body_part` (`object_Id`, `key`, `d_Type`, `d_Val`, `d_Var`, `base_Armor`, `armor_Vs_Slash`, `armor_Vs_Pierce`, `armor_Vs_Bludgeon`, `armor_Vs_Cold`, `armor_Vs_Fire`, `armor_Vs_Acid`, `armor_Vs_Electric`, `armor_Vs_Nether`, `b_h`, `h_l_f`, `m_l_f`, `l_l_f`, `h_r_f`, `m_r_f`, `l_r_f`, `h_l_b`, `m_l_b`, `l_l_b`, `h_r_b`, `m_r_b`, `l_r_b`)
 VALUES (230036,  0,  1,  0,    0,  900,  450,  450,  450,  450,  450,  450,  450,    0, 1, 0.33,    0,    0, 0.33,    0,    0, 0.33,    0,    0, 0.33,    0,    0) /* Head - Slash */
@@ -107,7 +106,7 @@ VALUES (230036,   1, 320, 0, 0) /* Strength */
      , (230036,   6, 400, 0, 0) /* Self */;
 
 INSERT INTO `weenie_properties_attribute_2nd` (`object_Id`, `type`, `init_Level`, `level_From_C_P`, `c_P_Spent`, `current_Level`)
-VALUES (230036,   1,12498650, 0, 0,12500000) /* MaxHealth */
+VALUES (230036,   1,12498650, 0, 0,5500000) /* MaxHealth */
      , (230036,   3,497300, 0, 0,500000) /* MaxStamina */
      , (230036,   5, 39600, 0, 0,40000) /* MaxMana */;
 
