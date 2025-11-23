@@ -488,3 +488,11 @@ VALUES (0x71134AA7, 260033, 0x11340025, 100.495, 105.477, 42.055, -0.06038, 0, 0
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
 VALUES (0x71134AA8, 260048, 0x1134002D, 120.491, 108.842, 42.055, 0.707107, 0, 0, 0.707107, False, '2024-12-21 16:39:52'); /* Amul Generator */
 /* @teleloc 0x1134002D [120.490997 108.842003 42.055000] 0.707107 0.000000 0.000000 0.707107 */
+
+INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
+VALUES (0x71134AA9, 260011, 0x11340024, 110.749, 75.6472, 42.055, 0.108614, 0, 0, -0.994084, False, '2025-11-22 18:13:42'); /* AB Raid Lv3 Generator */
+/* @teleloc 0x11340024 [110.749001 75.647202 42.055000] 0.108614 0.000000 0.000000 -0.994084 */
+
+INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
+VALUES (0x71134AAA, 260011, 0x1134001C, 72.9085, 75.1922, 42.055, -0.462734, 0, 0, -0.886497, False, '2025-11-22 18:13:49'); /* AB Raid Lv3 Generator */
+/* @teleloc 0x1134001C [72.908501 75.192200 42.055000] -0.462734 0.000000 0.000000 -0.886497 */
