@@ -1,3 +1,3 @@
 This modifies the Daimyos in the Hoshino Must Die quest.  
 Upon death, the Spectral Daimyos in the three triangle flaggind dungeons generate a portal at a fixed location in their spawn room.  This prevents them from summoning a portal into a wall.   
-As an added bonus, the fixed portal does not need to be double clicked.
+As an added bonus, the fixed portals do not need to be double clicked.
