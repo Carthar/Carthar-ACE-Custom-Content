@@ -5,3 +5,5 @@ There are three parts of the quest, with their respective status:
      South Quiddity - Complete
      Staging Director - Not yet started
      
+The following generators need to be added into a always active landblock as an intance.  I recommend Hebian-to next to all the others
+WCID  220147   SQuid StopGap Generator
