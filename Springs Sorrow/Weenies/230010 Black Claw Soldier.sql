@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230010;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230010, '230010 Black Claw Soldier', 10, '2024-12-11 01:17:46') /* Creature */;
+VALUES (230010, '230010 Black Claw Soldier', 10, '2025-03-28 01:21:30') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230010,   1,         16) /* ItemType - Creature */
@@ -19,8 +19,8 @@ VALUES (230010,   1,         16) /* ItemType - Creature */
      , (230010, 133,          2) /* ShowableOnRadar - ShowMovement */
      , (230010, 140,          1) /* AiOptions - CanOpenDoors */
      , (230010, 146,     300000) /* XpOverride */
+     , (230010, 308,          5) /* DamageResistRating */
      , (230010, 332,        500) /* LuminanceAward */
-     , (230010, 371,          5) /* GearDamageResist */
      , (230010, 386,          5) /* Overpower */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
@@ -141,7 +141,7 @@ INSERT INTO `weenie_properties_emote_action` (`emote_Id`, `order`, `type`, `dela
 VALUES (@parent_id, 0, 14 /* CastSpell */, 0, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 5943 /* Bleeding Blow */, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 INSERT INTO `weenie_properties_emote` (`object_Id`, `category`, `probability`, `weenie_Class_Id`, `style`, `substyle`, `quest`, `vendor_Type`, `min_Health`, `max_Health`)
-VALUES (230010, 3 /* Death */, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+VALUES (230010, 3 /* Death */, 0.025, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 SET @parent_id = LAST_INSERT_ID();
 
@@ -229,7 +229,7 @@ INSERT INTO `weenie_properties_emote_action` (`emote_Id`, `order`, `type`, `dela
 VALUES (@parent_id, 0, 10 /* Tell */, 0, 1, NULL, 'You can''t win', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 INSERT INTO `weenie_properties_create_list` (`object_Id`, `destination_Type`, `weenie_Class_Id`, `stack_Size`, `palette`, `shade`, `try_To_Bond`)
-VALUES (230010, 2,221001,  1, 0,    0, False) /* Create Smite */
+VALUES (230010, 2,231002,  1, 0,    0, False) /* Create Smite */
      , (230010, 9,     0,  0, 0,    1, False) /* Create nothing for ContainTreasure */
      , (230010, 9,221010,  1, 0, 0.85, False) /* Green Drudge Head */
      , (230010, 9,     0,  1, 0, 0.15, False) /* Create Nothing */;
