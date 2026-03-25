@@ -9,8 +9,8 @@ VALUES (260014,   1,      16384) /* ItemType - Key */
      , (260014,  16,    2097160) /* ItemUseable - SourceContainedTargetRemote */
      , (260014,  19,        100) /* Value */
      , (260014,  33,          0) /* Bonded */
-     , (260014,  91,          3) /* MaxStructure */
-     , (260014,  92,          3) /* Structure */
+     , (260014,  91,         13) /* MaxStructure */
+     , (260014,  92,         13) /* Structure */
      , (260014,  93,       1044) /* PhysicsState - Ethereal, IgnoreCollisions, Gravity */
      , (260014,  94,        640) /* TargetType - LockableMagicTarget */
      , (260014, 267,      28800) /* Lifespan */;
