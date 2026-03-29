@@ -8,7 +8,7 @@ This uses two landblocks.
 
 The dungeon will have two states.   One that is base ace and the raid configuration when triggered.
 
-The raid is timed to two hours.
+The raid is timed for two hours.
 
 Installation
 Copy this folder into to your ace\content\sql\ folder
