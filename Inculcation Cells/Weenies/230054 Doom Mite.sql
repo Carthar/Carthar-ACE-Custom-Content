@@ -145,9 +145,5 @@ VALUES (@parent_id, 0, 5 /* Motion */, 0, 1, 0x10000052 /* Twitch2 */, NULL, NUL
 
 INSERT INTO `weenie_properties_create_list` (`object_Id`, `destination_Type`, `weenie_Class_Id`, `stack_Size`, `palette`, `shade`, `try_To_Bond`)
 VALUES (230054, 9, 28207,  0, 0, 0.05, False) /* Create Copper Gromnie Tooth (28207) for ContainTreasure */
-     , (230054, 9,     0,  0, 0, 0.95, False) /* Create nothing for ContainTreasure */
-     , (230054, 9, 28200,  0, 0, 0.05, False) /* Create Resilient Gromnie Hide (28200) for ContainTreasure */
-     , (230054, 9,     0,  0, 0, 0.95, False) /* Create nothing for ContainTreasure */
-     , (230054, 9, 24477,  0, 0, 0.01, False) /* Create Sturdy Steel Key (24477) for ContainTreasure */
-     , (230054, 9,     0,  0, 0, 0.99, False) /* Create nothing for ContainTreasure */;
+     , (230054, 9,     0,  0, 0, 0.95, False) /* Create nothing for ContainTreasure */;
 
