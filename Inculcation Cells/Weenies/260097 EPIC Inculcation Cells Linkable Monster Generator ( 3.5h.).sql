@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 260097;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (260097, '260097 EPICInculcationlinkmonstergen (3.5h)', 1, '2025-03-15 03:07:23') /* Generic */;
+VALUES (260097, '260097 EPICInculcationlinkmonstergen (3.5h)', 1, '2026-01-24 11:00:10') /* Generic */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (260097,  66,          1) /* CheckpointStatus */
@@ -17,7 +17,7 @@ VALUES (260097,   1, True ) /* Stuck */
      , (260097,  18, True ) /* Visibility */;
 
 INSERT INTO `weenie_properties_float` (`object_Id`, `type`, `value`)
-VALUES (260097,  41,      1) /* RegenerationInterval */;
+VALUES (260097,  41,       1) /* RegenerationInterval */;
 
 INSERT INTO `weenie_properties_string` (`object_Id`, `type`, `value`)
 VALUES (260097,   1, 'EPIC Inculcation Cells Linkable Monster Generator ( 3.5h.)') /* Name */

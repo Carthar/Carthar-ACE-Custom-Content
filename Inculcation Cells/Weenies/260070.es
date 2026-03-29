@@ -5,11 +5,11 @@ Use:
                 QuestSuccess:
                     - DirectBroadcast: Hurry and defeat Lacandrillar.  My ability to hold this shift in reality will not last long.
                 QuestFailure:
-                    - Tell: I have been sent here to once again, stop a rogue Virindi who calls itself Lacandrillar.  Your kind helped us in the past.  I will reward you if you once again aid us in this endevor.
-                    - Tell: Lacandrillar has once again taken up residence in his labratories below.  He has however been more careful this time and employs a glamour to hide his work.
-                    - Tell: He has shifted the reality within this space making it appear as it did when you first encountered him.  I can overcome this for a short period of time if you can find me an item that shares the string lenght of the focus he used to cloak himself.
-                    - Tell: We can sense a great amount of void energy emanating from this place. The item would likely share that same energy tyep.
-                    - Tell: If you bring me such an item, I can shift a small linked group of your kind into his reality, so that you might defeat him.
+                    - Tell: I have been sent here to once again, stop a rogue Virindi who calls itself Lacandrillar.  Your kind helped us in the past.  I will reward you if you once again aid us in this endeavour.
+                    - Tell: Lacandrillar has once again taken up residence in his laboratories below.  He has however been more careful this time and employs a glamour to hide his work.
+                    - Tell: He has shifted the reality within this space making it appear as it did when you first encountered him.  I can overcome this for a short period of time if you can find me an item that shares the string length of the focus he used to cloak himself.
+                    - Tell: We can sense a great amount of void energy emanating from this place. The item would likely share that same energy type.
+                    - Tell: If you bring me such an item, I can shift the vision of a small linked group of your kind so they may see his phase, in order for you to defeat him.
         NumFellowsFailure:
             - Tell: Your party is too large to help me out.
         TestNoFellow:
@@ -19,7 +19,7 @@ Refuse: Glyph of Void Magic (43380)
     - Tell: Energy in this is very weak.
     - InqQuest: VoidCrystalTurnIn@7
         QuestSuccess:
-            - Tell: I can however use the energy within it to rechare the void crystal you previously gave me.  It should be enough for me to open another phase shift portal to Lacandrillar.
+            - Tell: I can however use the energy within it to recharge the void crystal you previously gave me.  It should be enough for me to open another phase shift portal to Lacandrillar.
             - TakeItems: Glyph of Void Magic (43380)
             - Goto: RUBusy
         QuestFailure:
@@ -47,20 +47,15 @@ Refuse: Void Crystal (80023)
     - StampQuest: VoidCrystalTurnIn
     - Goto: RUBusy
 
-Refuse: Pyreal (273)
-    - TakeItems: Pyreal (273)
-    - Tell: This turn in is for testing purposes only.  REMOVE THIS FOR LIVE SERVER
-    - StampQuest: VoidCrystalTurnIn
-    - Goto: RUBusy
-
 Give: 260091
     - Tell: What is this you give us?  These are most disturbing notes on the crafting of a device your kind calls Life Stones.
     - Tell: What purpose this would have a Virindi is lost to us.
-    - Tell: Their pact with the void has certainly twisted their thought and intentions.  They have also begun experimenting on your dead.
+    - Tell: Their time within the void has certainly twisted their thought and intentions.  They have also begun experimenting on your dead.
     - Tell: Though they mention in here that living specimens would be preferable.  We would also like to.... errr... never mind.
     - Tell: We will have to to study these notes further.   In the mean time, here is your reward for this errand.
     - AwardNoShareXP: 500,000,000
     - AwardLuminance: 50,000
+    - Give: Box Of Ten Promissory Notes (46435), 3
 
 GotoSet: RUBusy
     - InqEvent: IncuCell@4
@@ -79,11 +74,12 @@ GotoSet: RUBusy
                                             - Motion: Twitch2
                                             - Motion: Reading
                                             - StartEvent: IncuCell
-                                            - Delay: 1, LockFellow
+                                            - LockFellow
+                                            - Give: 260105
                                             - StampFellowQuest: IncuCellFellow
                                             - FellowBroadcast: Now go and defeat Lacandrillar.  I will hold back his glamour for as long as my mental strength holds.
                                 NumFellowsFailure:
-                                    - Tell: Your party is too large to assist me.  We can only viel a small stike team.
+                                    - Tell: Your party is too large to assist me.  We can only assist a small stike team.
                                     - Goto: GetLost
                                     - Tell: There is no way a single one of your kind can help us.
                                     - Goto: Getlost
@@ -93,6 +89,16 @@ GotoSet: RUBusy
 GotoSet: GetLost
     - Tell: We are very busy here.  Take this back and when you are ready to set forth, let us know.
     - Give: Void Crystal (80023)
+
+Refuse: 260105
+    - InqYesNo: Do you wish to end this quest?
+        TestSuccess:
+            - Tell: And so we may rest. This has been most draining.
+            - StopEvent: IncuCell
+            - StartEvent: IncucellNormal
+            - Give: Box Of Ten Promissory Notes (46435), 9
+        TestFailure:
+            - Say: Let me know if you change your mind.  It will end when we lose focus eventually.
 
 HeartBeat: Style: HandCombat, Substyle: Ready, Probability: 0.05
     - Motion: Twitch1
