@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230042;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230042, '230042 Nether Hollow Minion Experiment', 10, '2025-03-25 10:26:29') /* Creature */;
+VALUES (230042, '230042 Nether Hollow Minion Experiment', 10, '2026-03-29 04:54:54') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230042,   1,         16) /* ItemType - Creature */
@@ -95,7 +95,7 @@ VALUES (230042,   1, 500, 0, 0) /* Strength */
      , (230042,   6,  40, 0, 0) /* Self */;
 
 INSERT INTO `weenie_properties_attribute_2nd` (`object_Id`, `type`, `init_Level`, `level_From_C_P`, `c_P_Spent`, `current_Level`)
-VALUES (230042,   1,299813, 0, 0,400000) /* MaxHealth */
+VALUES (230042,   1,399813, 0, 0,400000) /* MaxHealth */
      , (230042,   3,309625, 0, 0,310000) /* MaxStamina */
      , (230042,   5,  3960, 0, 0, 4000) /* MaxMana */;
 
@@ -103,10 +103,18 @@ INSERT INTO `weenie_properties_skill` (`object_Id`, `type`, `level_From_P_P`, `s
 VALUES (230042,  6, 0, 3, 0, 534, 0, 0) /* MeleeDefense         Specialized */
      , (230042,  7, 0, 3, 0, 540, 0, 0) /* MissileDefense       Specialized */
      , (230042, 15, 0, 3, 0, 473, 0, 0) /* MagicDefense         Specialized */
+     , (230042, 16, 0, 2, 0, 553, 0, 0) /* ManaConversion           Trained */
      , (230042, 20, 0, 3, 0, 350, 0, 0) /* Deception            Specialized */
      , (230042, 24, 0, 3, 0, 100, 0, 0) /* Run                  Specialized */
+     , (230042, 31, 0, 2, 0, 553, 0, 0) /* CreatureEnchantment      Trained */
+     , (230042, 32, 0, 2, 0, 253, 0, 0) /* ItemEnchantment          Trained */
+     , (230042, 33, 0, 2, 0, 553, 0, 0) /* LifeMagic                Trained */
+     , (230042, 34, 0, 2, 0, 553, 0, 0) /* WarMagic                 Trained */
      , (230042, 45, 0, 3, 0, 352, 0, 0) /* LightWeapons         Specialized */
      , (230042, 51, 0, 2, 0,  84, 0, 0) /* SneakAttack              Trained */;
+
+INSERT INTO `weenie_properties_spell_book` (`object_Id`, `spell`, `probability`)
+VALUES (230042,  5582,   2.01) /* Nullify All Rares */;
 
 INSERT INTO `weenie_properties_emote` (`object_Id`, `category`, `probability`, `weenie_Class_Id`, `style`, `substyle`, `quest`, `vendor_Type`, `min_Health`, `max_Health`)
 VALUES (230042, 5 /* HeartBeat */, 0.075, NULL, 0x8000003C /* HandCombat */, 0x41000003 /* Ready */, NULL, NULL, NULL, NULL);
