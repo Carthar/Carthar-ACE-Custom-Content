@@ -9,7 +9,7 @@ Use:
                     - Tell: Lacandrillar has once again taken up residence in his laboratories below.  He has however been more careful this time and employs a glamour to hide his work.
                     - Tell: He has shifted the reality within this space making it appear as it did when you first encountered him.  I can overcome this for a short period of time if you can find me an item that shares the string length of the focus he used to cloak himself.
                     - Tell: We can sense a great amount of void energy emanating from this place. The item would likely share that same energy type.
-                    - Tell: If you bring me such an item, I can shift the vision of a small linked group of your kind so they may see his phase, in order for you to defeat him.
+                    - Tell: If you bring me such an item, I can shift the vision of a small linked group of your kind so they may see his phase, and defeat him.
         NumFellowsFailure:
             - Tell: Your party is too large to help me out.
         TestNoFellow:
@@ -53,8 +53,8 @@ Give: 260091
     - Tell: Their time within the void has certainly twisted their thought and intentions.  They have also begun experimenting on your dead.
     - Tell: Though they mention in here that living specimens would be preferable.  We would also like to.... errr... never mind.
     - Tell: We will have to to study these notes further.   In the mean time, here is your reward for this errand.
-    - AwardNoShareXP: 500,000,000
-    - AwardLuminance: 50,000
+    - AwardNoShareXP: 500 000 000
+    - AwardLuminance: 50 000
     - Give: Box Of Ten Promissory Notes (46435), 3
 
 GotoSet: RUBusy
