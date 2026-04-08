@@ -5,11 +5,11 @@ Use:
                 QuestSuccess:
                     - DirectBroadcast: Hurry and defeat Lacandrillar.  My ability to hold this shift in reality will not last long.
                 QuestFailure:
-                    - Tell: I have been sent here to once again, to stop the rogue Virindi who calls itself Lacandrillar.  Your kind helped us in the past.  I will reward you if you once again aid us in this endeavour.
-                    - Tell: Lacandrillar has once again taken up residence in his laboratories below.  He has however been more careful this time and employs a glamour to hide his work.
-                    - Tell: He has shifted the reality within this space making it appear as it did when you first encountered him.  I can overcome this for a short period of time if you can find me an item that shares the string length of the focus he used to cloak himself.
+                    - Tell: I have been dispatched to once again, to stop the rogue Virindi who calls itself Lacandrillar.  Your kind helped us in the past.  I will reward you if you once again aid us in this endeavour.
+                    - Tell: Lacandrillar has taken up residence in his laboratories below.  He has however been more careful this time and employs stolen Empyrean magic to hide his work.
+                    - Tell: He has shifted the reality within this space, making it appear as it did when you first encountered him.  I can overcome this for a short period of time if you can find me an item that shares the magical resonance as a focus for the spell.
                     - Tell: We can sense a great amount of void energy emanating from this place. The item would likely share that same energy type.
-                    - Tell: If you bring me such an item, I can shift the vision of a small linked group of your kind so they may see his phase, and defeat him.
+                    - Tell: If you bring me such an item, I can shift the vision of a small linked group of your kind so they may pierce this veil, and defeat him.
         NumFellowsFailure:
             - Tell: Your party is too large to help me out.
         TestNoFellow:
@@ -23,7 +23,7 @@ Refuse: Glyph of Void Magic (43380)
             - TakeItems: Glyph of Void Magic (43380)
             - Goto: RUBusy
         QuestFailure:
-            - Tell: I might be able use this recharge a powerful focusing cyrstal, but alone it is of no use to me.
+            - Tell: I might be able use this to recharge a powerful focusing cyrstal, but alone it is of no use to me.
 
 Refuse: Glyph of Nether (43387)
     - TextDirect: Energy in this is very weak.
@@ -33,16 +33,14 @@ Refuse: Glyph of Nether (43387)
             - TakeItems: Glyph of Nether (43387)
             - Goto: RUBusy
         QuestFailure:
-            - Tell: I might be able use this recharge a powerful focusing cyrstal, but alone it is of no use to me.
+            - Tell: I might be able use this to recharge a powerful focusing cyrstal, but alone it is of no use to me.
 
 Refuse: Void Crystal (70289)
-    - TakeItems: Void Crystal (70289)
     - Tell: Yes this will do perfectly.
     - StampQuest: VoidCrystalTurnIn
     - Goto: RUBusy
 
 Refuse: Void Crystal (80023)
-    - TakeItems: Void Crystal (80023)
     - Tell: Yes this will do perfectly.
     - StampQuest: VoidCrystalTurnIn
     - Goto: RUBusy
@@ -53,8 +51,8 @@ Give: 260091
     - Tell: Their time within the void has certainly twisted their thought and intentions.  They have also begun experimenting on your dead.
     - Tell: Though they mention in here that living specimens would be preferable.  We would also like to.... errr... never mind.
     - Tell: We will have to to study these notes further.   In the mean time, here is your reward for this errand.
-    - AwardNoShareXP
-    - AwardLuminance
+    - AwardNoShareXP: 500,000,000
+    - AwardLuminance: 75,000
     - Give: Box Of Ten Promissory Notes (46435), 3
 
 GotoSet: RUBusy
@@ -71,6 +69,8 @@ GotoSet: RUBusy
                                     - Goto: StartQuest
                                         GotoSet:
                                             - StopEvent: IncuCellNormal
+                                            - TakeItems: Void Crystal (80023)
+                                            - TakeItems: Void Crystal (70289)
                                             - Motion: Twitch2
                                             - Motion: Reading
                                             - StartEvent: IncuCell
@@ -81,14 +81,14 @@ GotoSet: RUBusy
                                 NumFellowsFailure:
                                     - Tell: Your party is too large to assist me.  We can only assist a small stike team.
                                     - Goto: GetLost
+                                TestNoFellow:
                                     - Tell: There is no way a single one of your kind can help us.
                                     - Goto: Getlost
                         TestFailure:
                             - Goto: GetLost
 
 GotoSet: GetLost
-    - Tell: We are very busy here.  Take this back and when you are ready to set forth, let us know.
-    - Give: Void Crystal (80023)
+    - Tell: We are very busy here.  When you are ready to set forth, let us know.
 
 Refuse: 260105
     - InqYesNo: Do you wish to end this quest?
