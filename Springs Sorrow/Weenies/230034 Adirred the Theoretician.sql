@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230034;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230034, '230034 Adirred the Theoretician', 10, '2025-11-22 06:38:55') /* Creature */;
+VALUES (230034, '230034 Adirred the Theoretician', 10, '2026-04-13 09:40:15') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230034,   1,         16) /* ItemType - Creature */
@@ -121,15 +121,13 @@ VALUES (230034,  6, 0, 3, 0, 557, 0, 0) /* MeleeDefense         Specialized */
      , (230034, 45, 0, 3, 0, 580, 0, 0) /* LightWeapons         Specialized */;
 
 INSERT INTO `weenie_properties_spell_book` (`object_Id`, `spell`, `probability`)
-VALUES (230034,  4101,  2.025) /* Champion's Skullduggery */
-     , (230034,  4102,  2.025) /* Champion's Clever Ruse */
-     , (230034,  3918,    2.2) /* Flammable */
-     , (230034,  3994,    2.1) /* Firestorm */
-     , (230034,  4246,    2.1) /* MeteorStrike */
+VALUES (230034,  3918,    2.2) /* Flammable */
+     , (230034,  6191,    2.3) /* Cassius' Ring of Fire II */
      , (230034,  4007,    2.1) /* Flame Wave */
      , (230034,  4468,  2.025) /* Incantation of Fire Protection Self */
-     , (230034,  3941,   2.05) /* Heavy Lightning Ring */
-     , (230034,  3919,   2.05) /* Lightning Rod */;
+     , (230034,  3941,   2.15) /* Heavy Lightning Ring */
+     , (230034,  3919,   2.05) /* Lightning Rod */
+     , (230034,  4331,    2.1) /* Incantation of Nullify All Magic Self */;
 
 INSERT INTO `weenie_properties_emote` (`object_Id`, `category`, `probability`, `weenie_Class_Id`, `style`, `substyle`, `quest`, `vendor_Type`, `min_Health`, `max_Health`)
 VALUES (230034, 15 /* WoundedTaunt */, 1, NULL, NULL, NULL, NULL, NULL, 0.4, 0.5);

@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230035;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230035, '230035 Adirred the Theoretician', 10, '2025-11-22 06:39:10') /* Creature */;
+VALUES (230035, '230035 Adirred the Theoretician', 10, '2026-04-13 09:40:13') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230035,   1,         16) /* ItemType - Creature */
@@ -122,13 +122,12 @@ VALUES (230035,  6, 0, 3, 0, 507, 0, 0) /* MeleeDefense         Specialized */
 
 INSERT INTO `weenie_properties_spell_book` (`object_Id`, `spell`, `probability`)
 VALUES (230035,  3918,    2.2) /* Flammable */
-     , (230035,  4246,    2.1) /* MeteorStrike */
-     , (230035,  4007,    2.1) /* Flame Wave */
+     , (230035,  4007,    2.2) /* Flame Wave */
      , (230035,  4468,  2.025) /* Incantation of Fire Protection Self */
      , (230035,  3919,  2.025) /* Lightning Rod */
      , (230035,  3941,    2.1) /* Heavy Lightning Ring */
-     , (230035,  3994,   2.15) /* Fire Bomb */
-     , (230035,  6157,    2.1) /* Withering Ring */;
+     , (230035,  6191,    2.3) /* Cassius' Ring of Fire II */
+     , (230035,  4331,    2.1) /* Incantation of Nullify All Magic Self */;
 
 INSERT INTO `weenie_properties_emote` (`object_Id`, `category`, `probability`, `weenie_Class_Id`, `style`, `substyle`, `quest`, `vendor_Type`, `min_Health`, `max_Health`)
 VALUES (230035, 15 /* WoundedTaunt */, 1, NULL, NULL, NULL, NULL, NULL, 0.4, 0.5);
