@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 221029;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (221029, '221029 Nether Nodule', 44, '2025-03-17 06:20:56') /* CraftTool */;
+VALUES (221029, '221029 Nether Nodule', 44, '2026-04-16 06:41:28') /* CraftTool */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (221029,   1,        128) /* ItemType - Misc */
@@ -9,17 +9,17 @@ VALUES (221029,   1,        128) /* ItemType - Misc */
      , (221029,   5,          1) /* EncumbranceVal */
      , (221029,   8,          1) /* Mass */
      , (221029,   9,          0) /* ValidLocations - None */
-     , (221029,  11,        100) /* MaxStackSize */
+     , (221029,  11,       2000) /* MaxStackSize */
      , (221029,  12,          1) /* StackSize */
      , (221029,  13,          1) /* StackUnitEncumbrance */
      , (221029,  14,          1) /* StackUnitMass */
-     , (221029,  15,         10) /* StackUnitValue */
-     , (221029,  16,     524296) /* ItemUseable - SourceContainedTargetContained */
+     , (221029,  15,          1) /* StackUnitValue */
+     , (221029,  16,     524296) /* ItemUseable */
      , (221029,  18,       4096) /* UiEffects */
-     , (221029,  19,         10) /* Value */
+     , (221029,  19,          1) /* Value */
      , (221029,  33,          1) /* Bonded */
      , (221029,  93,       1044) /* PhysicsState - Ethereal, IgnoreCollisions, Gravity */
-     , (221029,  94,          1) /* TargetType */
+     , (221029,  94,        128) /* TargetType */
      , (221029, 114,          1) /* Attuned */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
