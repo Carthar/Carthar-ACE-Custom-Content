@@ -1,7 +1,7 @@
 Use:
     - InqFellowNum: 1 - 9, HasFellowNum_1-9_7
         NumFellowsSuccess:
-            - InqFellowQuest: IncuCellFellow@4
+            - InqFellowQuest: IncuCellFellow
                 QuestSuccess:
                     - DirectBroadcast: Hurry and defeat Lacandrillar.  My ability to hold this shift in reality will not last long.
                 QuestFailure:
@@ -17,7 +17,7 @@ Use:
 
 Refuse: Glyph of Void Magic (43380)
     - Tell: Energy in this is very weak.
-    - InqQuest: VoidCrystalTurnIn@7
+    - InqQuest: VoidCrystalTurnIn
         QuestSuccess:
             - Tell: I can however use the energy within it to recharge the void crystal you previously gave me.  It should be enough for me to open another phase shift portal to Lacandrillar.
             - TakeItems: Glyph of Void Magic (43380)
@@ -27,7 +27,7 @@ Refuse: Glyph of Void Magic (43380)
 
 Refuse: Glyph of Nether (43387)
     - TextDirect: Energy in this is very weak.
-    - InqQuest: VoidCrystalTurnIn@8
+    - InqQuest: VoidCrystalTurnIn
         QuestSuccess:
             - Tell: I can however use the energy within it to rechare the void crystal you previously gave me.  It should be enough for me to open another phase shift portal to Lacandrillar.
             - TakeItems: Glyph of Nether (43387)
@@ -35,18 +35,18 @@ Refuse: Glyph of Nether (43387)
         QuestFailure:
             - Tell: I might be able use this to recharge a powerful focusing cyrstal, but alone it is of no use to me.
 
-Refuse: Void Crystal (70289)
+Give: Void Crystal (70289)
     - Tell: Yes this will do perfectly.
     - StampQuest: VoidCrystalTurnIn
     - Goto: RUBusy
 
-Refuse: Void Crystal (80023)
+Give: Void Crystal (80023)
     - Tell: Yes this will do perfectly.
     - StampQuest: VoidCrystalTurnIn
     - Goto: RUBusy
 
 Give: 260091
-    - Tell: What is this you give us?  These are most disturbing notes on the crafting of a device your kind calls Life Stones.
+    - Tell: What is this you give us?  These are most disturbing notes on the deconstructing of devices your kind calls Life Stones.
     - Tell: What purpose this would have a Virindi is lost to us.
     - Tell: Their time within the void has certainly twisted their thought and intentions.  They have also begun experimenting on your dead.
     - Tell: Though they mention in here that living specimens would be preferable.  We would also like to.... errr... never mind.
@@ -56,9 +56,10 @@ Give: 260091
     - Give: Box Of Ten Promissory Notes (46435), 3
 
 GotoSet: RUBusy
-    - InqEvent: IncuCell@4
+    - InqEvent: IncuCell
         EventSuccess:
             - Tell: I am already assisting another group.  When they have failed, we will let your pitiful group have a try.
+            - Goto: GetLost
         EventFailure:
             - Goto: RUReady
                 GotoSet:
@@ -69,15 +70,13 @@ GotoSet: RUBusy
                                     - Goto: StartQuest
                                         GotoSet:
                                             - StopEvent: IncuCellNormal
-                                            - TakeItems: Void Crystal (80023)
-                                            - TakeItems: Void Crystal (70289)
                                             - Motion: Twitch2
                                             - Motion: Reading
                                             - StartEvent: IncuCell
                                             - LockFellow
                                             - Give: 260105
                                             - StampFellowQuest: IncuCellFellow
-                                            - FellowBroadcast: Now go and defeat Lacandrillar.  I will hold back his glamour for as long as my mental strength holds.
+                                            - FellowBroadcast: Now go and defeat Lacandrillar.  I will hold back his illusion for as long as my mental strength holds.
                                 NumFellowsFailure:
                                     - Tell: Your party is too large to assist me.  We can only assist a small stike team.
                                     - Goto: GetLost
@@ -88,7 +87,12 @@ GotoSet: RUBusy
                             - Goto: GetLost
 
 GotoSet: GetLost
-    - Tell: We are very busy here.  When you are ready to set forth, let us know.
+    - Tell: We will be here, when the situation is resolved.
+    - InqQuest: VoidCrystalTurnIn
+        QuestSuccess:
+           - Give: 43387
+        QuestFailure:
+           - Give: 70289
 
 Refuse: 260105
     - InqYesNo: Do you wish to end this quest?
@@ -96,9 +100,17 @@ Refuse: 260105
             - Tell: And so we may rest. This has been most draining.
             - StopEvent: IncuCell
             - StartEvent: IncucellNormal
-            - Give: Box Of Ten Promissory Notes (46435), 9
+            - Give: Box Of Ten Promissory Notes (46435), 3
         TestFailure:
             - Say: Let me know if you change your mind.  It will end when we lose focus eventually.
+
+Give: 221029
+    - Tell: How cruious.  This will be of use.
+    - AwardLuminance: 15,000
+
+Give: 221037
+    - Tell: How cruious.  This will be of use.
+    - AwardLuminance: 15,000
 
 HeartBeat: Style: HandCombat, Substyle: Ready, Probability: 0.05
     - Motion: Twitch1
