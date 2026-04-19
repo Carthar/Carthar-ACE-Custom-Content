@@ -8,7 +8,7 @@ VALUES (260079,   1,        128) /* ItemType - Misc */
      , (260079,   8,        500) /* Mass */
      , (260079,  16,         32) /* ItemUseable - Remote */
      , (260079,  19,          0) /* Value */
-     , (260079,  38,        860) /* ResistLockpick */
+     , (260079,  38,        920) /* ResistLockpick */
      , (260079,  93,         24) /* PhysicsState - ReportCollisions, IgnoreCollisions */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
