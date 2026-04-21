@@ -275,7 +275,7 @@ VALUES (0x7029503D, 10735, 0x0295026E, 160, -280, 6.005, 1, 0, 0, 0, False, '200
 /* @teleloc 0x0295026E [160.000000 -280.000000 6.005000] 1.000000 0.000000 0.000000 0.000000 */
 
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
-VALUES (0x7029503E, 260097, 0x0295026C, 161.793, -260.303, 6.055, 0.999999, 0, 0, 0.001564, False, '2025-03-12 18:17:34'); /* EPIC Inculcation Cells Linkable Monster Generator ( 45 Min.) */
+VALUES (0x7029503E, 260097, 0x0295026C, 161.793, -260.303, 6.055, 0.999999, 0, 0, 0.001564, False, '2025-03-12 18:17:34'); /* EPIC Inculcation Cells Linkable Monster Generator ( 3.5h.) */
 /* @teleloc 0x0295026C [161.792999 -260.303009 6.055000] 0.999999 0.000000 0.000000 0.001564 */
 
 INSERT INTO `landblock_instance_link` (`parent_GUID`, `child_GUID`, `last_Modified`)
@@ -357,7 +357,7 @@ VALUES (0x7029504A, 260087, 0x02950106, 159.874, -770.084, -42.01, -0.114407, 0,
 /* @teleloc 0x02950106 [159.873993 -770.083984 -42.009998] -0.114407 0.000000 0.000000 -0.993434 */
 
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
-VALUES (0x7029504B, 260097, 0x0295026C, 158.619, -257.732, 6.055, 0.999386, 0, 0, 0.035032, False, '2025-03-12 18:55:42'); /* EPIC Inculcation Cells Linkable Monster Generator ( 45 Min.) */
+VALUES (0x7029504B, 260097, 0x0295026C, 158.619, -257.732, 6.055, 0.999386, 0, 0, 0.035032, False, '2025-03-12 18:55:42'); /* EPIC Inculcation Cells Linkable Monster Generator ( 3.5h.) */
 /* @teleloc 0x0295026C [158.619003 -257.731995 6.055000] 0.999386 0.000000 0.000000 0.035032 */
 
 INSERT INTO `landblock_instance_link` (`parent_GUID`, `child_GUID`, `last_Modified`)
@@ -396,14 +396,14 @@ VALUES (0x7029504B, 0x70295043, '2025-03-18 18:41:18') /* Door (260081) */
      , (0x7029504B, 0x7029510D, '2025-03-15 16:21:59') /* Virindi Lab Assistant (230047) */
      , (0x7029504B, 0x7029510E, '2025-03-15 16:22:55') /* Void Essence Storage (260102) */
      , (0x7029504B, 0x7029510F, '2025-03-15 16:23:22') /* Void Metal Storage Chest (260103) */
-     , (0x7029504B, 0x70295110, '2025-03-15 16:24:56') /* Unstable Nether Lifestone (260104) */
-     , (0x7029504B, 0x70295111, '2025-03-15 16:25:03') /* Unstable Nether Lifestone (260104) */
-     , (0x7029504B, 0x70295112, '2025-03-15 16:25:18') /* Unstable Nether Lifestone (260104) */
-     , (0x7029504B, 0x70295113, '2025-03-15 16:25:31') /* Unstable Nether Lifestone (260104) */
-     , (0x7029504B, 0x70295114, '2025-03-15 16:25:49') /* Unstable Nether Lifestone (260104) */
-     , (0x7029504B, 0x70295115, '2025-03-15 16:25:55') /* Unstable Nether Lifestone (260104) */
-     , (0x7029504B, 0x70295116, '2025-03-15 16:26:08') /* Unstable Nether Lifestone (260104) */
-     , (0x7029504B, 0x70295117, '2025-03-15 16:26:13') /* Unstable Nether Lifestone (260104) */
+     , (0x7029504B, 0x70295110, '2025-03-15 16:24:56') /* Unstable Proto-Nether Lifestone (260104) */
+     , (0x7029504B, 0x70295111, '2025-03-15 16:25:03') /* Unstable Proto-Nether Lifestone (260104) */
+     , (0x7029504B, 0x70295112, '2025-03-15 16:25:18') /* Unstable Proto-Nether Lifestone (260104) */
+     , (0x7029504B, 0x70295113, '2025-03-15 16:25:31') /* Unstable Proto-Nether Lifestone (260104) */
+     , (0x7029504B, 0x70295114, '2025-03-15 16:25:49') /* Unstable Proto-Nether Lifestone (260104) */
+     , (0x7029504B, 0x70295115, '2025-03-15 16:25:55') /* Unstable Proto-Nether Lifestone (260104) */
+     , (0x7029504B, 0x70295116, '2025-03-15 16:26:08') /* Unstable Proto-Nether Lifestone (260104) */
+     , (0x7029504B, 0x70295117, '2025-03-15 16:26:13') /* Unstable Proto-Nether Lifestone (260104) */
      , (0x7029504B, 0x70295138, '2025-03-18 18:41:18') /* Door (260082) */
      , (0x7029504B, 0x70295139, '2025-03-18 18:43:29') /* Solid Locked Laboratory Door (260096) */
      , (0x7029504B, 0x7029513A, '2025-03-18 18:44:10') /* Solid Locked Laboratory Door (260096) */
@@ -442,9 +442,9 @@ VALUES (0x7029504B, 0x70295043, '2025-03-18 18:41:18') /* Door (260081) */
      , (0x7029504B, 0x7029515C, '2025-08-19 10:25:45') /* Containment Hook (260106) */
      , (0x7029504B, 0x7029515D, '2025-08-19 10:27:40') /* Containment Hook (260106) */
      , (0x7029504B, 0x7029515E, '2025-08-19 10:28:55') /* Containment Hook (260106) */
-     , (0x7029504B, 0x7029515F, '2025-08-19 10:52:38')
-     , (0x7029504B, 0x70295160, '2025-08-19 11:04:47')
-     , (0x7029504B, 0x70295161, '2025-08-19 11:05:24');
+     , (0x7029504B, 0x7029515F, '2025-08-19 10:52:38') /* Vivisection Table (260107) */
+     , (0x7029504B, 0x70295160, '2025-08-19 11:04:47') /* Medical Device (260108) */
+     , (0x7029504B, 0x70295161, '2025-08-19 11:05:24') /* Medical Device (260108) */;
 
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
 VALUES (0x7029504C, 230040, 0x02950214, 160.156, -164.144, 0.029, -0.017079, 0, 0, -0.999854,  True, '2025-03-12 18:57:39'); /* Virindi Lab Director */
@@ -719,7 +719,7 @@ VALUES (0x70295090, 260098, 0x02950112, 159.89, -721.174, -35.971, 0.999914, 0, 
 /* @teleloc 0x02950112 [159.889999 -721.174011 -35.971001] 0.999914 0.000000 0.000000 -0.013131 */
 
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
-VALUES (0x70295091, 260097, 0x02950247, 197.331, -305.755, 0.055, -0.006071, 0, 0, -0.999982, False, '2025-03-13 18:27:41'); /* EPIC Inculcation Cells Linkable Monster Generator ( 45 Min.) */
+VALUES (0x70295091, 260097, 0x02950247, 197.331, -305.755, 0.055, -0.006071, 0, 0, -0.999982, False, '2025-03-13 18:27:41'); /* EPIC Inculcation Cells Linkable Monster Generator ( 3.5h.) */
 /* @teleloc 0x02950247 [197.330994 -305.755005 0.055000] -0.006071 0.000000 0.000000 -0.999982 */
 
 INSERT INTO `landblock_instance_link` (`parent_GUID`, `child_GUID`, `last_Modified`)
@@ -1002,35 +1002,35 @@ VALUES (0x7029510F, 260103, 0x02950196, 207.32, -480.007, -11.945, 0.729645, 0, 
 /* @teleloc 0x02950196 [207.320007 -480.006989 -11.945000] 0.729645 0.000000 0.000000 0.683826 */
 
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
-VALUES (0x70295110, 260104, 0x02950119, 173.338, -719.995, -36, 0.714229, 0, 0, 0.699913,  True, '2025-03-15 16:24:56'); /* Unstable Nether Lifestone */
+VALUES (0x70295110, 260104, 0x02950119, 173.338, -719.995, -36, 0.714229, 0, 0, 0.699913,  True, '2025-03-15 16:24:56'); /* Unstable Proto-Nether Lifestone */
 /* @teleloc 0x02950119 [173.337997 -719.994995 -36.000000] 0.714229 0.000000 0.000000 0.699913 */
 
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
-VALUES (0x70295111, 260104, 0x0295010B, 146.224, -720.177, -36, 0.708543, 0, 0, -0.705667,  True, '2025-03-15 16:25:03'); /* Unstable Nether Lifestone */
+VALUES (0x70295111, 260104, 0x0295010B, 146.224, -720.177, -36, 0.708543, 0, 0, -0.705667,  True, '2025-03-15 16:25:03'); /* Unstable Proto-Nether Lifestone */
 /* @teleloc 0x0295010B [146.223999 -720.177002 -36.000000] 0.708543 0.000000 0.000000 -0.705667 */
 
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
-VALUES (0x70295112, 260104, 0x02950113, 162.852, -727.495, -36, -0.999297, 0, 0, -0.037492,  True, '2025-03-15 16:25:18'); /* Unstable Nether Lifestone */
+VALUES (0x70295112, 260104, 0x02950113, 162.852, -727.495, -36, -0.999297, 0, 0, -0.037492,  True, '2025-03-15 16:25:18'); /* Unstable Proto-Nether Lifestone */
 /* @teleloc 0x02950113 [162.852005 -727.494995 -36.000000] -0.999297 0.000000 0.000000 -0.037492 */
 
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
-VALUES (0x70295113, 260104, 0x02950113, 157.508, -727.054, -36, -0.999903, 0, 0, -0.013956,  True, '2025-03-15 16:25:31'); /* Unstable Nether Lifestone */
+VALUES (0x70295113, 260104, 0x02950113, 157.508, -727.054, -36, -0.999903, 0, 0, -0.013956,  True, '2025-03-15 16:25:31'); /* Unstable Proto-Nether Lifestone */
 /* @teleloc 0x02950113 [157.507996 -727.054016 -36.000000] -0.999903 0.000000 0.000000 -0.013956 */
 
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
-VALUES (0x70295114, 260104, 0x0295010A, 154.915, -715.059, -36, -0.999939, 0, 0, 0.011012,  True, '2025-03-15 16:25:49'); /* Unstable Nether Lifestone */
+VALUES (0x70295114, 260104, 0x0295010A, 154.915, -715.059, -36, -0.999939, 0, 0, 0.011012,  True, '2025-03-15 16:25:49'); /* Unstable Proto-Nether Lifestone */
 /* @teleloc 0x0295010A [154.914993 -715.059021 -36.000000] -0.999939 0.000000 0.000000 0.011012 */
 
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
-VALUES (0x70295115, 260104, 0x02950118, 165.019, -714.918, -36, -0.998796, 0, 0, -0.049063,  True, '2025-03-15 16:25:55'); /* Unstable Nether Lifestone */
+VALUES (0x70295115, 260104, 0x02950118, 165.019, -714.918, -36, -0.998796, 0, 0, -0.049063,  True, '2025-03-15 16:25:55'); /* Unstable Proto-Nether Lifestone */
 /* @teleloc 0x02950118 [165.018997 -714.918030 -36.000000] -0.998796 0.000000 0.000000 -0.049063 */
 
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
-VALUES (0x70295116, 260104, 0x02950110, 158.275, -704.848, -36, 0.999032, 0, 0, 0.043995,  True, '2025-03-15 16:26:08'); /* Unstable Nether Lifestone */
+VALUES (0x70295116, 260104, 0x02950110, 158.275, -704.848, -36, 0.999032, 0, 0, 0.043995,  True, '2025-03-15 16:26:08'); /* Unstable Proto-Nether Lifestone */
 /* @teleloc 0x02950110 [158.274994 -704.848022 -36.000000] 0.999032 0.000000 0.000000 0.043995 */
 
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
-VALUES (0x70295117, 260104, 0x02950110, 161.776, -705.062, -36, 0.999819, 0, 0, 0.019008,  True, '2025-03-15 16:26:13'); /* Unstable Nether Lifestone */
+VALUES (0x70295117, 260104, 0x02950110, 161.776, -705.062, -36, 0.999819, 0, 0, 0.019008,  True, '2025-03-15 16:26:13'); /* Unstable Proto-Nether Lifestone */
 /* @teleloc 0x02950110 [161.776001 -705.062012 -36.000000] 0.999819 0.000000 0.000000 0.019008 */
 
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
@@ -1354,13 +1354,21 @@ VALUES (0x7029515E, 260106, 0x029501E8, 121.877, -317.103, 0.055, 0.382684, 0, 0
 /* @teleloc 0x029501E8 [121.876999 -317.102997 0.055000] 0.382684 0.000000 0.000000 0.923880 */
 
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
-VALUES (0x7029515F, 260107, 0x02950248, 200.479, -322.351, 0, 0.707107, 0, 0, -0.707107,  True, '2025-08-19 10:52:38');
+VALUES (0x7029515F, 260107, 0x02950248, 200.479, -322.351, 0, 0.707107, 0, 0, -0.707107,  True, '2025-08-19 10:52:38'); /* Vivisection Table */
 /* @teleloc 0x02950248 [200.479004 -322.351013 0.000000] 0.707107 0.000000 0.000000 -0.707107 */
 
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
-VALUES (0x70295160, 260108, 0x02950248, 201.307, -323.837, 0, 0.92388, 0, 0, -0.382684,  True, '2025-08-19 11:04:47');
+VALUES (0x70295160, 260108, 0x02950248, 201.307, -323.837, 0, 0.92388, 0, 0, -0.382684,  True, '2025-08-19 11:04:47'); /* Medical Device */
 /* @teleloc 0x02950248 [201.307007 -323.837006 0.000000] 0.923880 0.000000 0.000000 -0.382684 */
 
 INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
-VALUES (0x70295161, 260108, 0x02950248, 199.155, -320.824, 0, 0.382684, 0, 0, 0.92388,  True, '2025-08-19 11:05:24');
+VALUES (0x70295161, 260108, 0x02950248, 199.155, -320.824, 0, 0.382684, 0, 0, 0.92388,  True, '2025-08-19 11:05:24'); /* Medical Device */
 /* @teleloc 0x02950248 [199.154999 -320.824005 0.000000] 0.382684 0.000000 0.000000 0.923880 */
+
+INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
+VALUES (0x70295162, 260093, 0x0295018A, 160.026, -459.743, -11.945, -0.008929, 0, 0, 0.99996, False, '2026-04-20 20:37:59'); /* IncuCell Booter Event Gen */
+/* @teleloc 0x0295018A [160.026001 -459.743011 -11.945000] -0.008929 0.000000 0.000000 0.999960 */
+
+INSERT INTO `landblock_instance` (`guid`, `weenie_Class_Id`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`, `is_Link_Child`, `last_Modified`)
+VALUES (0x70295163, 260093, 0x02950114, 159.807, -738.345, -35.945, 0.005933, 0, 0, -0.999982, False, '2026-04-20 20:45:30'); /* IncuCell Booter Event Gen */
+/* @teleloc 0x02950114 [159.807007 -738.344971 -35.945000] 0.005933 0.000000 0.000000 -0.999982 */
