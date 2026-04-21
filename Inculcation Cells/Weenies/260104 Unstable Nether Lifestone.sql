@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 260104;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (260104, '260104 Unstable Nether Lifestone', 10, '2025-04-01 07:34:56') /* Creature */;
+VALUES (260104, '260104 Unstable Nether Lifestone', 10, '2026-04-20 08:10:01') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (260104,   1,         16) /* ItemType - Creature */
@@ -18,7 +18,8 @@ VALUES (260104,   1,         16) /* ItemType - Creature */
      , (260104, 133,          4) /* ShowableOnRadar - ShowAlways */
      , (260104, 146,          0) /* XpOverride */
      , (260104, 290,          1) /* HearLocalSignals */
-     , (260104, 291,         20) /* HearLocalSignalsRadius */;
+     , (260104, 291,         20) /* HearLocalSignalsRadius */
+     , (260104, 386,          5) /* Overpower */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
 VALUES (260104,   1, True ) /* Stuck */
@@ -51,7 +52,7 @@ VALUES (260104,   1,       5) /* HeartbeatInterval */
      , (260104,  43,      10) /* GeneratorRadius */
      , (260104,  64,    0.75) /* ResistSlash */
      , (260104,  65,    0.75) /* ResistPierce */
-     , (260104,  66,    0.75) /* ResistBludgeon */
+     , (260104,  66,     0.9) /* ResistBludgeon */
      , (260104,  67,    0.75) /* ResistFire */
      , (260104,  68,    0.75) /* ResistCold */
      , (260104,  69,    0.75) /* ResistAcid */
@@ -65,10 +66,10 @@ VALUES (260104,   1,       5) /* HeartbeatInterval */
      , (260104, 104,      10) /* ObviousRadarRange */
      , (260104, 121,      10) /* GeneratorInitialDelay */
      , (260104, 125,       1) /* ResistHealthDrain */
-     , (260104, 166,     1.5) /* ResistNether */;
+     , (260104, 166,       2) /* ResistNether */;
 
 INSERT INTO `weenie_properties_string` (`object_Id`, `type`, `value`)
-VALUES (260104,   1, 'Unstable Nether Lifestone') /* Name */
+VALUES (260104,   1, 'Unstable Proto-Nether Lifestone') /* Name */
      , (260104,  16, 'A small spire of black crystal, which hums with power.') /* LongDesc */;
 
 INSERT INTO `weenie_properties_d_i_d` (`object_Id`, `type`, `value`)
@@ -165,4 +166,4 @@ VALUES (@parent_id, 0, 19 /* CastSpellInstant */, 0, 1, NULL, NULL, NULL, NULL, 
      , (@parent_id, 2, 77 /* DeleteSelf */, 0, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 INSERT INTO `weenie_properties_generator` (`object_Id`, `probability`, `weenie_Class_Id`, `delay`, `init_Create`, `max_Create`, `when_Create`, `where_Create`, `stack_Size`, `palette_Id`, `shade`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`)
-VALUES (260104, -1, 230048, 30, 1, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) /* Generate Lifestone Golem (x1 up to max of 4) - Regenerate upon Destruction - Location to (re)Generate: Scatter */;
+VALUES (260104, -1, 230048, 15, 1, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) /* Generate Lifestone Golem (x1 up to max of 4) - Regenerate upon Destruction - Location to (re)Generate: Scatter */;

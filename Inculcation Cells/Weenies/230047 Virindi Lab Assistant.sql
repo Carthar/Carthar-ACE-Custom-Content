@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230047;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230047, '230047 Virindi Lab Assistant', 10, '2025-03-25 10:25:44') /* Creature */;
+VALUES (230047, '230047 Virindi Lab Assistant', 10, '2026-04-20 07:48:14') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230047,   1,         16) /* ItemType - Creature */
@@ -17,7 +17,8 @@ VALUES (230047,   1,         16) /* ItemType - Creature */
      , (230047, 133,          2) /* ShowableOnRadar - ShowMovement */
      , (230047, 140,          1) /* AiOptions - CanOpenDoors */
      , (230047, 308,         15) /* DamageResistRating */
-     , (230047, 315,         15) /* CritResistRating */;
+     , (230047, 315,         15) /* CritResistRating */
+     , (230047, 386,         75) /* Overpower */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
 VALUES (230047,   1, True ) /* Stuck */

@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230044;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230044, '230044 Volcanic Void Golem', 10, '2025-08-17 06:56:59') /* Creature */;
+VALUES (230044, '230044 Volcanic Void Golem', 10, '2026-04-20 07:45:45') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230044,   1,         16) /* ItemType - Creature */
@@ -60,7 +60,7 @@ VALUES (230044,   1,       5) /* HeartbeatInterval */
      , (230044,  65,    0.33) /* ResistPierce */
      , (230044,  66,    0.95) /* ResistBludgeon */
      , (230044,  67,       0) /* ResistFire */
-     , (230044,  68,       1) /* ResistCold */
+     , (230044,  68,     1.2) /* ResistCold */
      , (230044,  69,     0.2) /* ResistAcid */
      , (230044,  70,    0.33) /* ResistElectric */
      , (230044,  71,       1) /* ResistHealthBoost */

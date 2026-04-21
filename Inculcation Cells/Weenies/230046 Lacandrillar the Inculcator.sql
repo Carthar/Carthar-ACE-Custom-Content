@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230046;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230046, '230046 Lacandrillar the Inculcator', 10, '2026-04-07 10:47:13') /* Creature */;
+VALUES (230046, '230046 Lacandrillar the Inculcator', 10, '2026-04-20 08:08:47') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230046,   1,         16) /* ItemType - Creature */
@@ -21,10 +21,10 @@ VALUES (230046,   1,         16) /* ItemType - Creature */
      , (230046, 146,    4000000) /* XpOverride */
      , (230046, 292,          5) /* Cleaving */
      , (230046, 307,         20) /* DamageRating */
-     , (230046, 308,         20) /* DamageResistRating */
+     , (230046, 308,         10) /* DamageResistRating */
      , (230046, 316,         25) /* CritDamageResistRating */
-     , (230046, 332,      15000) /* LuminanceAward */
-     , (230046, 386,         25) /* Overpower */;
+     , (230046, 332,       1500) /* LuminanceAward */
+     , (230046, 386,         35) /* Overpower */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
 VALUES (230046,   1, False) /* Stuck */
@@ -93,7 +93,7 @@ VALUES (230046,  0,  1,  0,    0,  900,  450,  450,  450,  450,  450,  450,  450
      , (230046,  2,  1,  0,    0,  900,  450,  450,  450,  450,  450,  450,  450,    0, 3,    0, 0.23,  0.1,    0, 0.23,  0.2,    0, 0.17, 0.45,    0, 0.17, 0.45) /* Abdomen - Slash */
      , (230046,  3,  1,  0,    0,  900,  450,  450,  450,  450,  450,  450,  450,    0, 1, 0.23, 0.04,  0.2, 0.23, 0.04,  0.1, 0.23, 0.03,    0, 0.23, 0.03,    0) /* UpperArm - Slash */
      , (230046,  4,  1,  0,    0,  900,  450,  450,  450,  450,  450,  450,  450,    0, 2,    0,  0.3,  0.3,    0,  0.3,  0.4,    0,  0.3,  0.1,    0,  0.3,  0.1) /* LowerArm - Slash */
-     , (230046,  5,  1,1450,  0.5,  900,  450,  450,  450,  450,  450,  450,  450,    0, 2,    0,  0.2,  0.3,    0,  0.2,  0.2,    0,  0.2,    0,    0,  0.2,    0) /* Hand - Slash */
+     , (230046,  5,  1,950,  0.5,  900,  450,  450,  450,  450,  450,  450,  450,    0, 2,    0,  0.2,  0.3,    0,  0.2,  0.2,    0,  0.2,    0,    0,  0.2,    0) /* Hand - Slash */
      , (230046, 17,  1,  0,    0,  900,  450,  450,  450,  450,  450,  450,  450,    0, 3,    0,    0,  0.1,    0,    0,  0.1,    0, 0.13, 0.45,    0, 0.13, 0.45) /* Tail - Slash */;
 
 INSERT INTO `weenie_properties_attribute` (`object_Id`, `type`, `init_Level`, `level_From_C_P`, `c_P_Spent`)
@@ -123,13 +123,10 @@ VALUES (230046,  6, 0, 3, 0, 482, 0, 0) /* MeleeDefense         Specialized */
 
 INSERT INTO `weenie_properties_spell_book` (`object_Id`, `spell`, `probability`)
 VALUES (230046,  3918,    2.2) /* Flammable */
-     , (230046,  4246,    2.1) /* MeteorStrike */
-     , (230046,  4007,    2.1) /* Flame Wave */
+     , (230046,  4007,    2.2) /* Flame Wave */
      , (230046,  4468,  2.025) /* Incantation of Fire Protection Self */
-     , (230046,  3919,  2.025) /* Lightning Rod */
-     , (230046,  3941,    2.1) /* Heavy Lightning Ring */
-     , (230046,  3994,   2.15) /* Fire Bomb */
-     , (230046,  6157,    2.1) /* Withering Ring */;
+     , (230046,  3919,   2.05) /* Lightning Rod */
+     , (230046,  3941,   2.15) /* Heavy Lightning Ring */;
 
 INSERT INTO `weenie_properties_emote` (`object_Id`, `category`, `probability`, `weenie_Class_Id`, `style`, `substyle`, `quest`, `vendor_Type`, `min_Health`, `max_Health`)
 VALUES (230046, 15 /* WoundedTaunt */, 1, NULL, NULL, NULL, NULL, NULL, 0.45, 0.5);
@@ -193,7 +190,7 @@ INSERT INTO `weenie_properties_emote_action` (`emote_Id`, `order`, `type`, `dela
 VALUES (@parent_id, 0, 72 /* Generate */, 0, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
      , (@parent_id, 1, 8 /* Say */, 0, 0, NULL, 'You may have struck me down here, but we mearly return to the void, a home of sorts.  We will return to continue my work.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
      , (@parent_id, 2, 8 /* Say */, 0, 0, NULL, 'All you have done today is delay my research.  How to anchor to this world will be my greatest achievement.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
-     , (@parent_id, 3, 16 /* WorldBroadcast */, 0, 1, NULL, '%tn strikes down Lacandrillar the Inculcator ending his abhorrent experiments on the people and creatures of Dereth.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+     , (@parent_id, 3, 16 /* WorldBroadcast */, 0, 1, NULL, '%tn has struck down Lacandrillar the Inculcator ending his abhorrent experiments on the people and creatures of Dereth, for now.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
      , (@parent_id, 4, 17 /* LocalBroadcast */, 0, 1, NULL, 'With the death of Lacandrillar the energy stored in the proto life stones is released all at once.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
      , (@parent_id, 5, 88 /* LocalSignal */, 0, 1, NULL, 'Boom', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
      , (@parent_id, 6, 88 /* LocalSignal */, 0, 1, NULL, 'LocalBoss', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);

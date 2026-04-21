@@ -1,7 +1,7 @@
 Use:
     - InqFellowNum: 1 - 9, HasFellowNum_1-9_7
         NumFellowsSuccess:
-            - InqFellowQuest: IncuCellFellow
+            - InqFellowQuest: IncuCellFellow@2
                 QuestSuccess:
                     - DirectBroadcast: Hurry and defeat Lacandrillar.  My ability to hold this shift in reality will not last long.
                 QuestFailure:
@@ -17,7 +17,7 @@ Use:
 
 Refuse: Glyph of Void Magic (43380)
     - Tell: Energy in this is very weak.
-    - InqQuest: VoidCrystalTurnIn
+    - InqQuest: VoidCrystalTurnIn@4
         QuestSuccess:
             - Tell: I can however use the energy within it to recharge the void crystal you previously gave me.  It should be enough for me to open another phase shift portal to Lacandrillar.
             - TakeItems: Glyph of Void Magic (43380)
@@ -27,7 +27,7 @@ Refuse: Glyph of Void Magic (43380)
 
 Refuse: Glyph of Nether (43387)
     - TextDirect: Energy in this is very weak.
-    - InqQuest: VoidCrystalTurnIn
+    - InqQuest: VoidCrystalTurnIn@5
         QuestSuccess:
             - Tell: I can however use the energy within it to rechare the void crystal you previously gave me.  It should be enough for me to open another phase shift portal to Lacandrillar.
             - TakeItems: Glyph of Nether (43387)
@@ -37,12 +37,10 @@ Refuse: Glyph of Nether (43387)
 
 Give: Void Crystal (70289)
     - Tell: Yes this will do perfectly.
-    - StampQuest: VoidCrystalTurnIn
     - Goto: RUBusy
 
 Give: Void Crystal (80023)
     - Tell: Yes this will do perfectly.
-    - StampQuest: VoidCrystalTurnIn
     - Goto: RUBusy
 
 Give: 260091
@@ -56,7 +54,7 @@ Give: 260091
     - Give: Box Of Ten Promissory Notes (46435), 3
 
 GotoSet: RUBusy
-    - InqEvent: IncuCell
+    - InqEvent: IncuCell@2
         EventSuccess:
             - Tell: I am already assisting another group.  When they have failed, we will let your pitiful group have a try.
             - Goto: GetLost
@@ -69,6 +67,7 @@ GotoSet: RUBusy
                                 NumFellowsSuccess:
                                     - Goto: StartQuest
                                         GotoSet:
+                                            - StampQuest: VoidCrystalTurnIn                                            
                                             - StopEvent: IncuCellNormal
                                             - Motion: Twitch2
                                             - Motion: Reading
@@ -88,11 +87,11 @@ GotoSet: RUBusy
 
 GotoSet: GetLost
     - Tell: We will be here, when the situation is resolved.
-    - InqQuest: VoidCrystalTurnIn
+    - InqQuest: VoidCrystalTurnIn@6
         QuestSuccess:
-           - Give: 43387
+            - Give: Glyph of Nether (43387)
         QuestFailure:
-           - Give: 70289
+            - Give: Void Crystal (70289)
 
 Refuse: 260105
     - InqYesNo: Do you wish to end this quest?
