@@ -67,7 +67,7 @@ GotoSet: RUBusy
                                 NumFellowsSuccess:
                                     - Goto: StartQuest
                                         GotoSet:
-                                            - StampQuest: VoidCrystalTurnIn                                            
+                                            - StampQuest: VoidCrystalTurnIn
                                             - StopEvent: IncuCellNormal
                                             - Motion: Twitch2
                                             - Motion: Reading
@@ -96,6 +96,7 @@ GotoSet: GetLost
 Refuse: 260105
     - InqYesNo: Do you wish to end this quest?
         TestSuccess:
+            - TakeItems: 260105
             - Tell: And so we may rest. This has been most draining.
             - StopEvent: IncuCell
             - StartEvent: IncucellNormal
