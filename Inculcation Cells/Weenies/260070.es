@@ -100,16 +100,15 @@ Refuse: 260105
             - Tell: And so we may rest. This has been most draining.
             - StopEvent: IncuCell
             - StartEvent: IncucellNormal
-            - Give: Box Of Ten Promissory Notes (46435), 3
         TestFailure:
             - Say: Let me know if you change your mind.  It will end when we lose focus eventually.
 
 Give: 221029
-    - Tell: How cruious.  This will be of use.
+    - Tell: How curious.  This will be of use.
     - AwardLuminance: 15,000
 
 Give: 221037
-    - Tell: How cruious.  This will be of use.
+    - Tell: How curious.  This will be of use.
     - AwardLuminance: 15,000
 
 HeartBeat: Style: HandCombat, Substyle: Ready, Probability: 0.05
