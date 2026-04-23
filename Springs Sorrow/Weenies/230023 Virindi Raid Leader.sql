@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230023;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230023, '230023 Virindi Raid Leader', 10, '2025-11-22 06:50:52') /* Creature */;
+VALUES (230023, '230023 Virindi Raid Leader', 10, '2026-04-16 11:47:29') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230023,   1,         16) /* ItemType - Creature */
@@ -56,6 +56,7 @@ VALUES (230023,   1,       5) /* HeartbeatInterval */
      , (230023,  36,       1) /* ChargeSpeed */
      , (230023,  39,       2) /* DefaultScale */
      , (230023,  41,       0) /* RegenerationInterval */
+     , (230023,  55,      30) /* HomeRadius */
      , (230023,  64,     1.2) /* ResistSlash */
      , (230023,  65,     0.7) /* ResistPierce */
      , (230023,  66,     0.7) /* ResistBludgeon */
@@ -105,7 +106,7 @@ VALUES (230023,   1, 320, 0, 0) /* Strength */
      , (230023,   6, 400, 0, 0) /* Self */;
 
 INSERT INTO `weenie_properties_attribute_2nd` (`object_Id`, `type`, `init_Level`, `level_From_C_P`, `c_P_Spent`, `current_Level`)
-VALUES (230023,   1,12498650, 0, 0,12500000) /* MaxHealth */
+VALUES (230023,   1,8498650, 0, 0,8500000) /* MaxHealth */
      , (230023,   3,497300, 0, 0,500000) /* MaxStamina */
      , (230023,   5, 39600, 0, 0,40000) /* MaxMana */;
 

@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230032;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230032, '230032 Mega Buff Mud Paw', 10, '2026-01-20 06:40:46') /* Creature */;
+VALUES (230032, '230032 Mega Buff Mud Paw', 10, '2026-04-16 11:36:51') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230032,   1,         16) /* ItemType - Creature */
@@ -40,7 +40,7 @@ VALUES (230032,   1, True ) /* Stuck */
 INSERT INTO `weenie_properties_float` (`object_Id`, `type`, `value`)
 VALUES (230032,   1,       5) /* HeartbeatInterval */
      , (230032,   2,       0) /* HeartbeatTimestamp */
-     , (230032,   3,     800) /* HealthRate */
+     , (230032,   3,       0) /* HealthRate */
      , (230032,   4,      15) /* StaminaRate */
      , (230032,   5,       2) /* ManaRate */
      , (230032,  12,       0) /* Shade */

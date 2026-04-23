@@ -1,14 +1,14 @@
 DELETE FROM `weenie` WHERE `class_Id` = 260026;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (260026, '260026 Pan Raid Lv3 Generator', 1, '2024-12-23 06:38:01') /* Generic */;
+VALUES (260026, '260026 Pan Raid Lv3 Generator', 1, '2026-04-16 11:49:59') /* Generic */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (260026,  81,         10) /* MaxGeneratedObjects */
      , (260026,  82,         10) /* InitGeneratedObjects */
      , (260026,  93,       1044) /* PhysicsState - Ethereal, IgnoreCollisions, Gravity */
      , (260026, 142,          3) /* GeneratorTimeType - Event */
-     , (260026, 145,          1) /* GeneratorEndDestructionType - Destroy */;
+     , (260026, 145,          2) /* GeneratorEndDestructionType */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
 VALUES (260026,   1, True ) /* Stuck */

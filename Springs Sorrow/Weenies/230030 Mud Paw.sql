@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230030;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230030, '230030 Mud Paw', 10, '2026-01-20 06:40:36') /* Creature */;
+VALUES (230030, '230030 Mud Paw', 10, '2026-04-16 11:36:01') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230030,   1,         16) /* ItemType - Creature */
@@ -40,7 +40,7 @@ VALUES (230030,   1, True ) /* Stuck */
 INSERT INTO `weenie_properties_float` (`object_Id`, `type`, `value`)
 VALUES (230030,   1,       5) /* HeartbeatInterval */
      , (230030,   2,       0) /* HeartbeatTimestamp */
-     , (230030,   3,      80) /* HealthRate */
+     , (230030,   3,       0) /* HealthRate */
      , (230030,   4,      15) /* StaminaRate */
      , (230030,   5,       2) /* ManaRate */
      , (230030,  12,       0) /* Shade */
@@ -102,7 +102,7 @@ VALUES (230030,   1, 400, 0, 0) /* Strength */
      , (230030,   6, 500, 0, 0) /* Self */;
 
 INSERT INTO `weenie_properties_attribute_2nd` (`object_Id`, `type`, `init_Level`, `level_From_C_P`, `c_P_Spent`, `current_Level`)
-VALUES (230030,   1,579800, 0, 0,580000) /* MaxHealth */
+VALUES (230030,   1,979800, 0, 0,980000) /* MaxHealth */
      , (230030,   3, 10850, 0, 0,11250) /* MaxStamina */
      , (230030,   5,  4500, 0, 0, 5000) /* MaxMana */;
 

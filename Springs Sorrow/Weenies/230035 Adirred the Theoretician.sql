@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230035;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230035, '230035 Adirred the Theoretician', 10, '2026-04-13 09:40:13') /* Creature */;
+VALUES (230035, '230035 Adirred the Theoretician', 10, '2026-04-16 11:41:49') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230035,   1,         16) /* ItemType - Creature */
@@ -21,7 +21,6 @@ VALUES (230035,   1,         16) /* ItemType - Creature */
      , (230035, 146,    4000000) /* XpOverride */
      , (230035, 292,          5) /* Cleaving */
      , (230035, 307,         20) /* DamageRating */
-     , (230035, 308,         30) /* DamageResistRating */
      , (230035, 316,         25) /* CritDamageResistRating */
      , (230035, 332,       1500) /* LuminanceAward */
      , (230035, 386,         25) /* Overpower */;
@@ -40,7 +39,7 @@ VALUES (230035,   1, True ) /* Stuck */
 INSERT INTO `weenie_properties_float` (`object_Id`, `type`, `value`)
 VALUES (230035,   1,       5) /* HeartbeatInterval */
      , (230035,   2,       0) /* HeartbeatTimestamp */
-     , (230035,   3,    5000) /* HealthRate */
+     , (230035,   3,       0) /* HealthRate */
      , (230035,   4,     500) /* StaminaRate */
      , (230035,   5,     200) /* ManaRate */
      , (230035,  12,       0) /* Shade */
@@ -104,7 +103,7 @@ VALUES (230035,   1, 320, 0, 0) /* Strength */
      , (230035,   6, 400, 0, 0) /* Self */;
 
 INSERT INTO `weenie_properties_attribute_2nd` (`object_Id`, `type`, `init_Level`, `level_From_C_P`, `c_P_Spent`, `current_Level`)
-VALUES (230035,   1,44998648, 0, 0,32000000) /* MaxHealth */
+VALUES (230035,   1,11998650, 0, 0,12000000) /* MaxHealth */
      , (230035,   3,497300, 0, 0,500000) /* MaxStamina */
      , (230035,   5, 39600, 0, 0,40000) /* MaxMana */;
 

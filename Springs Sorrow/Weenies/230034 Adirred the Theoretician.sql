@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230034;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230034, '230034 Adirred the Theoretician', 10, '2026-04-13 09:40:15') /* Creature */;
+VALUES (230034, '230034 Adirred the Theoretician', 10, '2026-04-16 11:41:12') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230034,   1,         16) /* ItemType - Creature */
@@ -21,7 +21,6 @@ VALUES (230034,   1,         16) /* ItemType - Creature */
      , (230034, 146,    4000000) /* XpOverride */
      , (230034, 292,          5) /* Cleaving */
      , (230034, 307,         20) /* DamageRating */
-     , (230034, 308,         25) /* DamageResistRating */
      , (230034, 316,         25) /* CritDamageResistRating */
      , (230034, 332,       1500) /* LuminanceAward */
      , (230034, 386,         25) /* Overpower */;
@@ -40,7 +39,7 @@ VALUES (230034,   1, True ) /* Stuck */
 INSERT INTO `weenie_properties_float` (`object_Id`, `type`, `value`)
 VALUES (230034,   1,       5) /* HeartbeatInterval */
      , (230034,   2,       0) /* HeartbeatTimestamp */
-     , (230034,   3,    3000) /* HealthRate */
+     , (230034,   3,       0) /* HealthRate */
      , (230034,   4,     500) /* StaminaRate */
      , (230034,   5,     200) /* ManaRate */
      , (230034,  12,       0) /* Shade */
@@ -104,7 +103,7 @@ VALUES (230034,   1, 320, 0, 0) /* Strength */
      , (230034,   6, 400, 0, 0) /* Self */;
 
 INSERT INTO `weenie_properties_attribute_2nd` (`object_Id`, `type`, `init_Level`, `level_From_C_P`, `c_P_Spent`, `current_Level`)
-VALUES (230034,   1,23998650, 0, 0,16000000) /* MaxHealth */
+VALUES (230034,   1,8998650, 0, 0,9000000) /* MaxHealth */
      , (230034,   3,497300, 0, 0,500000) /* MaxStamina */
      , (230034,   5, 39600, 0, 0,40000) /* MaxMana */;
 
@@ -162,7 +161,8 @@ INSERT INTO `weenie_properties_emote_action` (`emote_Id`, `order`, `type`, `dela
 VALUES (@parent_id, 0, 72 /* Generate */, 0, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
      , (@parent_id, 1, 24 /* StopEvent */, 0, 1, NULL, 'Pan_raid', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
      , (@parent_id, 2, 23 /* StartEvent */, 0, 1, NULL, 'AB_Reward', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
-     , (@parent_id, 3, 1 /* Act */, 0, 1, NULL, 'With the death of Adirred the virindi cages evaporate, freeing the townspeople.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+     , (@parent_id, 3, 16 /* WorldBroadcast */, 0, 1, NULL, '%tn strikes down Adirred ending his mysterious plans.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+     , (@parent_id, 4, 16 /* WorldBroadcast */, 0, 1, NULL, 'With the death of Adirred the virindi cages evaporate, freeing the townspeople.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 INSERT INTO `weenie_properties_generator` (`object_Id`, `probability`, `weenie_Class_Id`, `delay`, `init_Create`, `max_Create`, `when_Create`, `where_Create`, `stack_Size`, `palette_Id`, `shade`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`)
-VALUES (230023, -1, 260003, 0, 1, 1, 1, 4, -1, 0, 0, 0x11340027, 112.229774, 145.076050, 62.005001, -0.201302, 0.000000, 0.000000, -0.979529) /* Generate Hollow Drudge Lurker - Regenerate upon Destruction - Location to (re)Generate: Scatter */;
+VALUES (230034, -1, 260045, 0, 1, 1, 1, 4, -1, 0, 0, 0x11340027, 112.229774, 145.076050, 62.005001, -0.201302, 0.000000, 0.000000, -0.979529) /* Generate Hollow Drudge Lurker - Regenerate upon Destruction - Location to (re)Generate: Scatter */;
