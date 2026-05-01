@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230056;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230056, '230056 The Void Smith', 10, '2026-03-22 01:35:49') /* Creature */;
+VALUES (230056, '230056 The Void Smith', 10, '2026-04-29 07:29:37') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230056,   1,         16) /* ItemType - Creature */
@@ -27,7 +27,8 @@ VALUES (230056,   1,         16) /* ItemType - Creature */
      , (230056, 233,          1) /* AugmentationCriticalDefense */
      , (230056, 307,         90) /* DamageRating */
      , (230056, 308,         25) /* DamageResistRating */
-     , (230056, 315,         50) /* CritResistRating */;
+     , (230056, 315,         50) /* CritResistRating */
+     , (230056, 386,         10) /* Overpower */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
 VALUES (230056,   1, True ) /* Stuck */
@@ -146,7 +147,8 @@ INSERT INTO `weenie_properties_emote_action` (`emote_Id`, `order`, `type`, `dela
 VALUES (@parent_id, 0, 8 /* Say */, 0, 0, NULL, 'So you wish to test your metal against me?', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
      , (@parent_id, 1, 8 /* Say */, 0, 0, NULL, 'I forge metal from the very fabric of reality.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
      , (@parent_id, 2, 8 /* Say */, 0, 0, NULL, 'I can literally forge greats works from nothing.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
-     , (@parent_id, 3, 8 /* Say */, 0, 0, NULL, 'You will be no match.  Run while you can.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+     , (@parent_id, 3, 8 /* Say */, 0, 0, NULL, 'You will be no match.  Run while you can.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+     , (@parent_id, 4, 88 /* LocalSignal */, 0, 1, NULL, 'Boss4', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 INSERT INTO `weenie_properties_emote` (`object_Id`, `category`, `probability`, `weenie_Class_Id`, `style`, `substyle`, `quest`, `vendor_Type`, `min_Health`, `max_Health`)
 VALUES (230056, 16 /* KillTaunt */, 0.3, NULL, NULL, NULL, NULL, NULL, NULL, NULL);

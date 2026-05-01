@@ -28,4 +28,4 @@ VALUES (220033,   1, 0x0200026B) /* Setup */
      , (220033,   8, 0x06001066) /* Icon */;
 
 INSERT INTO `weenie_properties_generator` (`object_Id`, `probability`, `weenie_Class_Id`, `delay`, `init_Create`, `max_Create`, `when_Create`, `where_Create`, `stack_Size`, `palette_Id`, `shade`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`)
-VALUES (220033, -1, 220001, 0, 2, 2, 1, 1, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) /* Generate Two Unstable Tuskers 220001 (x2 up to max of 2) - Regenerate upon Destruction - Location to (re)Generate: OnTop */;
+VALUES (220033, -1, 230063, 0, 2, 2, 1, 1, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) /* Generate Two Unstable Tuskers 230063 (x2 up to max of 2) - Regenerate upon Destruction - Location to (re)Generate: OnTop */;

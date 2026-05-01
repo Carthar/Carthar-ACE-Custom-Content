@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 220046;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (220046, '220046 Barrier', 19, '2024-07-14 08:19:40') /* Door */;
+VALUES (220046, '220046 Barrier', 19, '2026-04-12 02:03:08') /* Door */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (220046,   1,        128) /* ItemType - Misc */
@@ -9,7 +9,7 @@ VALUES (220046,   1,        128) /* ItemType - Misc */
      , (220046,  19,          0) /* Value */
      , (220046,  93,       2072) /* PhysicsState - ReportCollisions, IgnoreCollisions, LightingOn */
      , (220046, 290,          1) /* HearLocalSignals */
-     , (220046, 291,         50) /* HearLocalSignalsRadius */;
+     , (220046, 291,         60) /* HearLocalSignalsRadius */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
 VALUES (220046,   1, True ) /* Stuck */

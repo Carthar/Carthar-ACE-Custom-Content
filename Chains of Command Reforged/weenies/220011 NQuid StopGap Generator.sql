@@ -1,12 +1,14 @@
 DELETE FROM `weenie` WHERE `class_Id` = 220011;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (220011, '220010 NQuid StopGap Generator', 1, '2024-05-18 01:02:01') /* Generic */;
+VALUES (220011, '220010 NQuid StopGap Generator', 1, '2026-04-06 06:41:14') /* Generic */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (220011,  81,          1) /* MaxGeneratedObjects */
      , (220011,  82,          1) /* InitGeneratedObjects */
-     , (220011,  93,       1044) /* PhysicsState - Ethereal, IgnoreCollisions, Gravity */;
+     , (220011,  93,       1044) /* PhysicsState - Ethereal, IgnoreCollisions, Gravity */
+     , (220011, 142,          3) /* GeneratorTimeType */
+     , (220011, 145,          2) /* GeneratorEndDestructionType */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
 VALUES (220011,   1, True ) /* Stuck */
@@ -18,7 +20,8 @@ VALUES (220011,  41,      30) /* RegenerationInterval */
      , (220011, 121,       5) /* GeneratorInitialDelay */;
 
 INSERT INTO `weenie_properties_string` (`object_Id`, `type`, `value`)
-VALUES (220011,   1, 'NQuid StopGap Generator') /* Name */;
+VALUES (220011,   1, 'NQuid StopGap Generator') /* Name */
+     , (220011,  34, 'NQuid') /* GeneratorEvent */;
 
 INSERT INTO `weenie_properties_d_i_d` (`object_Id`, `type`, `value`)
 VALUES (220011,   1, 0x0200026B) /* Setup */

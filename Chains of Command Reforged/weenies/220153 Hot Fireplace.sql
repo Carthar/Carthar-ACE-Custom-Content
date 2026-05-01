@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 220153;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (220153, '220153 Hot Fireplace', 13, '2025-08-17 06:43:54') /* HotSpot */;
+VALUES (220153, '220153 Hot Fireplace', 13, '2026-04-29 09:11:57') /* HotSpot */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (220153,   1,        128) /* ItemType - Misc */
@@ -17,6 +17,7 @@ VALUES (220153,   1, True ) /* Stuck */
      , (220153,  12, True ) /* ReportCollisions */
      , (220153,  13, True ) /* Ethereal */
      , (220153,  14, False) /* GravityStatus */
+     , (220153,  15, True ) /* LightsStatus */
      , (220153,  57, False) /* AffectsAis */;
 
 INSERT INTO `weenie_properties_float` (`object_Id`, `type`, `value`)

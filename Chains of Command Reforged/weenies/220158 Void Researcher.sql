@@ -190,10 +190,10 @@ VALUES (@parent_id, 0, 5 /* Motion */, 0, 1, 0x10000053 /* Twitch3 */, NULL, NUL
 INSERT INTO `weenie_properties_create_list` (`object_Id`, `destination_Type`, `weenie_Class_Id`, `stack_Size`, `palette`, `shade`, `try_To_Bond`)
 VALUES (220158, 4, 44720, -1, 0,    0, False) /* Gem of Greater Luminance */
      , (220158, 4, 46435, -1, 0,    0, False) /* Box of Ten Promissory Notes */
-     , (220158, 4,221038, -1, 0,    0, False) /* Sleeves */
-     , (220158, 4,221039, -1, 0,    0, False) /* BP */
-     , (220158, 0,     0,  0, 0,    0, False) /*  */
-     , (220158, 0,     0,  0, 0,    0, False) /*  */
-     , (220158, 4,221042, -1, 0,    0, False) /* Gauntlet */
-     , (220158, 4,221043, -1, 0,    0, False) /* Sollerets */;
+     , (220158, 4, 221038, -1, 0,    0, False) /* Koujia Void Sleeves */
+     , (220158, 4, 221039, -1, 0,    0, False) /* Koujia Void BP */
+     , (220158, 4, 221040, -1, 0,    0, False) /* Amuli Void Leggings */
+     , (220158, 4, 221041, -1, 0,    0, False) /* Void Metal Helm  */
+     , (220158, 4, 221042, -1, 0,    0, False) /* Gauntlet */
+     , (220158, 4, 221043, -1, 0,    0, False) /* Sollerets */;
 

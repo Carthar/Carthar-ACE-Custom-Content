@@ -12,7 +12,8 @@ VALUES (221010,   1,        128) /* ItemType - Misc */
      , (221010,  19,          0) /* Value */
      , (221010,  93,       1044) /* PhysicsState - Ethereal, IgnoreCollisions, Gravity */
      , (221010, 150,        103) /* HookPlacement - Hook */
-     , (221010, 151,          9) /* HookType - Floor, Yard */;
+     , (221010, 151,          9) /* HookType - Floor, Yard */
+     , (221010, 267,        300) /* Lifespan */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
 VALUES (221010,  22, True ) /* Inscribable */

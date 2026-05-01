@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 220022;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (220022, '220022 NQuid R5 Door', 19, '2024-05-20 07:07:58') /* Door */;
+VALUES (220022, '220022 NQuid R5 Door', 19, '2026-04-25 01:12:57') /* Door */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (220022,   1,        128) /* ItemType - Misc */
@@ -31,7 +31,7 @@ VALUES (220022,   1,       5) /* HeartbeatInterval */
      , (220022,  54,     0.5) /* UseRadius */;
 
 INSERT INTO `weenie_properties_string` (`object_Id`, `type`, `value`)
-VALUES (220022,   1, 'NQuid R5 Door') /* Name */
+VALUES (220022,   1, 'Door') /* Name */
      , (220022,  14, 'Locked until the three sisters are defeated') /* Use */;
 
 INSERT INTO `weenie_properties_d_i_d` (`object_Id`, `type`, `value`)
