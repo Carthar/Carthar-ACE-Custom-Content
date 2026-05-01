@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230045;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230045, '230045 Fiery Tentacle', 10, '2025-04-29 11:21:25') /* Creature */;
+VALUES (230045, '230045 Fiery Tentacle', 10, '2026-03-29 11:37:42') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230045,   1,         16) /* ItemType - Creature */
@@ -17,8 +17,8 @@ VALUES (230045,   1,         16) /* ItemType - Creature */
      , (230045,  72,         62) /* FriendType - Elemental */
      , (230045,  93,       1032) /* PhysicsState */
      , (230045, 101,        183) /* AiAllowedCombatStyle - Unarmed, OneHanded, OneHandedAndShield, Bow, Crossbow, ThrownWeapon */
-     , (230045, 133,          0) /* ShowableOnRadar - Undefined */
-     , (230045, 146,          0) /* XpOverride */;
+     , (230045, 133,          3) /* ShowableOnRadar */
+     , (230045, 146,     100000) /* XpOverride */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
 VALUES (230045,   1, True ) /* Stuck */
@@ -40,7 +40,7 @@ VALUES (230045,   1,       5) /* HeartbeatInterval */
      , (230045,  13,     1.2) /* ArmorModVsSlash */
      , (230045,  14,     1.2) /* ArmorModVsPierce */
      , (230045,  15,     1.2) /* ArmorModVsBludgeon */
-     , (230045,  16,    0.75) /* ArmorModVsCold */
+     , (230045,  16,     0.5) /* ArmorModVsCold */
      , (230045,  17,      20) /* ArmorModVsFire */
      , (230045,  18,      20) /* ArmorModVsAcid */
      , (230045,  19,      20) /* ArmorModVsElectric */
@@ -52,7 +52,7 @@ VALUES (230045,   1,       5) /* HeartbeatInterval */
      , (230045,  65,     0.6) /* ResistPierce */
      , (230045,  66,     0.6) /* ResistBludgeon */
      , (230045,  67,       0) /* ResistFire */
-     , (230045,  68,     0.9) /* ResistCold */
+     , (230045,  68,    1.25) /* ResistCold */
      , (230045,  69,     0.2) /* ResistAcid */
      , (230045,  70,     0.2) /* ResistElectric */
      , (230045,  71,       1) /* ResistHealthBoost */
@@ -93,24 +93,27 @@ VALUES (230045,   1,   1, 0, 0) /* Strength */
      , (230045,   6, 400, 0, 0) /* Self */;
 
 INSERT INTO `weenie_properties_attribute_2nd` (`object_Id`, `type`, `init_Level`, `level_From_C_P`, `c_P_Spent`, `current_Level`)
-VALUES (230045,   1,  4000, 0, 0,15001) /* MaxHealth */
-     , (230045,   3,  2000, 0, 0,20001) /* MaxStamina */
-     , (230045,   5,  2000, 0, 0,20400) /* MaxMana */;
+VALUES (230045,   1, 15000, 0, 0,15000) /* MaxHealth */
+     , (230045,   3, 20000, 0, 0,20001) /* MaxStamina */
+     , (230045,   5, 20000, 0, 0,20400) /* MaxMana */;
 
 INSERT INTO `weenie_properties_skill` (`object_Id`, `type`, `level_From_P_P`, `s_a_c`, `p_p`, `init_Level`, `resistance_At_Last_Check`, `last_Used_Time`)
 VALUES (230045,  6, 0, 3, 0, 320, 0, 0) /* MeleeDefense         Specialized */
      , (230045,  7, 0, 3, 0, 320, 0, 0) /* MissileDefense       Specialized */
-     , (230045, 45, 0, 3, 0, 550, 0, 0) /* LightWeapons         Specialized */
      , (230045, 14, 0, 3, 0, 170, 0,1316.0108035747014) /* ArcaneLore          Specialized */
      , (230045, 15, 0, 3, 0, 180, 0,1316.0108035747014) /* MagicDefense        Specialized */
      , (230045, 20, 0, 3, 0, 170, 0,1316.0108035747014) /* Deception           Specialized */
-     , (230045, 31, 0, 3, 0, 170, 0,1316.0108035747014) /* CreatureEnchantment Specialized */
-     , (230045, 33, 0, 3, 0, 500, 0,1316.0108035747014) /* LifeMagic           Specialized */
-     , (230045, 34, 0, 3, 0, 270, 0, 0) /* WarMagic             Specialized */;
+     , (230045, 31, 0, 3, 0, 270, 0, 0) /* CreatureEnchantment  Specialized */
+     , (230045, 32, 0, 3, 0, 270, 0, 0) /* ItemEnchantment      Specialized */
+     , (230045, 33, 0, 3, 0, 700, 0, 0) /* LifeMagic            Specialized */
+     , (230045, 34, 0, 3, 0, 270, 0, 0) /* WarMagic             Specialized */
+     , (230045, 45, 0, 3, 0, 550, 0, 0) /* LightWeapons         Specialized */;
 
 INSERT INTO `weenie_properties_spell_book` (`object_Id`, `spell`, `probability`)
-VALUES (230045,  1801,   2.35) /* Flame Streak VI */
+VALUES (230045,  1801,   2.25) /* Flame Streak VI */
      , (230045,    85,   2.35) /* Flame Bolt VI */
      , (230045,  2170,    2.1) /* Inferno's Gift */
-     , (230045,   118,    2.4) /* Flame Blast VI */;
+     , (230045,   118,    2.4) /* Flame Blast VI */
+     , (230045,  5582,    2.2) /* Nullify All Rares */
+     , (230045,  3918,   2.05) /* Flammable */;
 
