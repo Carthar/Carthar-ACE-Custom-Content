@@ -61,7 +61,7 @@ GotoSet: RUBusy
         EventFailure:
             - Goto: RUReady
                 GotoSet:
-                    - InqYesNo: Is your fellow ready to set forth?
+                    - InqYesNo: Is your fellow ready to set forth?  Be warned that you can not take rare gems with you as they destabalize our magic.
                         TestSuccess:
                             - InqFellowNum: 1 - 9, HasFellowNum_1-9_8
                                 NumFellowsSuccess:
@@ -76,6 +76,7 @@ GotoSet: RUBusy
                                             - Give: 260105
                                             - StampFellowQuest: IncuCellFellow
                                             - FellowBroadcast: Now go and defeat Lacandrillar.  I will hold back his illusion for as long as my mental strength holds.
+                                            - FellowBroadcast: Also remember that you may not take rare gems and jewels along with you inside as they destablize our magics.
                                 NumFellowsFailure:
                                     - Tell: Your party is too large to assist me.  We can only assist a small stike team.
                                     - Goto: GetLost

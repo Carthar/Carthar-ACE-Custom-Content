@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230029;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230029, '230029 Infused Tusker Raider', 10, '2024-12-27 11:19:48') /* Creature */;
+VALUES (230029, '230029 Infused Tusker Raider', 10, '2026-05-03 10:18:14') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230029,   1,         16) /* ItemType - Creature */
@@ -108,6 +108,9 @@ VALUES (230029,  6, 0, 3, 0, 464, 0, 0) /* MeleeDefense         Specialized */
      , (230029, 20, 0, 3, 0, 100, 0, 0) /* Deception           Specialized */
      , (230029, 22, 0, 3, 0, 120, 0, 0) /* Jump                Specialized */
      , (230029, 24, 0, 3, 0, 360, 0, 0) /* Run                 Specialized */
+     , (230029, 31, 0, 2, 0,   0, 0, 0) /* CreatureEnchantment      Trained */
+     , (230029, 32, 0, 2, 0,   0, 0, 0) /* ItemEnchantment          Trained */
+     , (230029, 33, 0, 2, 0,   0, 0, 0) /* LifeMagic                Trained */
      , (230029, 45, 0, 3, 0, 434, 0, 0) /* LightWeapons         Specialized */
      , (230029, 46, 0, 3, 0, 434, 0, 0) /* FinesseWeapons       Specialized */
      , (230029, 51, 0, 3, 0, 551, 0, 0) /* SneakAttack          Specialized */
