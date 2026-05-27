@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 230048;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (230048, '230048 Lifestone Golem', 10, '2025-04-01 07:30:22') /* Creature */;
+VALUES (230048, '230048 Lifestone Golem', 10, '2026-05-26 10:44:38') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (230048,   1,         16) /* ItemType - Creature */
@@ -16,7 +16,8 @@ VALUES (230048,   1,         16) /* ItemType - Creature */
      , (230048,  68,          9) /* TargetingTactic - Random, TopDamager */
      , (230048,  93,       1032) /* PhysicsState - ReportCollisions, Gravity */
      , (230048, 133,          2) /* ShowableOnRadar - ShowMovement */
-     , (230048, 146,     125000) /* XpOverride */;
+     , (230048, 146,    1250000) /* XpOverride */
+     , (230048, 386,         15) /* Overpower */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
 VALUES (230048,   1, True ) /* Stuck */
