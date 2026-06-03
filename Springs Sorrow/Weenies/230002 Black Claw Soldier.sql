@@ -229,7 +229,7 @@ INSERT INTO `weenie_properties_emote_action` (`emote_Id`, `order`, `type`, `dela
 VALUES (@parent_id, 0, 10 /* Tell */, 0, 1, NULL, 'You can''t win', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 INSERT INTO `weenie_properties_create_list` (`object_Id`, `destination_Type`, `weenie_Class_Id`, `stack_Size`, `palette`, `shade`, `try_To_Bond`)
-VALUES (230002, 2,221001,  1, 0,    0, False) /* Create Smite */
+VALUES (230002, 2,231001,  1, 0,    0, False) /* Create Smite */
      , (230002, 9,     0,  0, 0,    1, False) /* Create nothing for ContainTreasure */
      , (230002, 9,221008,  1, 0, 0.85, False) /* Drudge Head */
      , (230002, 9,     0,  1, 0, 0.15, False) /* Create Nothing */;
