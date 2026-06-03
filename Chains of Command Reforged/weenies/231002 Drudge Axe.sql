@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 231002;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (231002, '231002 Drudge Axe', 6, '2025-03-15 01:40:08') /* MeleeWeapon */;
+VALUES (231002, '231002 Drudge Axe', 6, '2026-06-02 08:30:42') /* MeleeWeapon */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (231002,   1,          1) /* ItemType - MeleeWeapon */
@@ -12,7 +12,7 @@ VALUES (231002,   1,          1) /* ItemType - MeleeWeapon */
      , (231002,  19,        350) /* Value */
      , (231002,  33,         -2) /* Bonded */
      , (231002,  37,       9999) /* ResistItemAppraisal */
-     , (231002,  44,       1720) /* Damage */
+     , (231002,  44,       1020) /* Damage */
      , (231002,  45,          1) /* DamageType */
      , (231002,  46,          2) /* DefaultCombatStyle - OneHanded */
      , (231002,  47,          4) /* AttackType - Slash */
