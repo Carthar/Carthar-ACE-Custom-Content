@@ -1,0 +1,132 @@
+Use:
+    - InqFellowNum: 1 - 9, HasFellowNum_1-9_7
+        NumFellowsSuccess:
+            - InqFellowQuest: IncuCellFellow@2
+                QuestSuccess:
+                    - DirectBroadcast: Hurry and defeat Lacandrillar.  My ability to hold this shift in reality will not last long.
+                QuestFailure:
+                    - Tell: I have been dispatched to once again, to stop the rogue Virindi who calls itself Lacandrillar.  Your kind helped us in the past.  I will reward you if you once again aid us in this endeavour.
+                    - Tell: Lacandrillar has taken up residence in his laboratories below.  He has however been more careful this time and employs stolen Empyrean magic to hide his work.
+                    - Tell: He has shifted the reality within this space, making it appear as it did when you first encountered him.  I can overcome this for a short period of time if you can find me an item that shares the magical resonance as a focus for the spell.
+                    - Tell: We can sense a great amount of void energy emanating from this place. The item would likely share that same energy type.
+                    - Tell: If you bring me such an item, I can shift the vision of a small linked group of your kind so they may pierce this veil, and defeat him.
+        NumFellowsFailure:
+            - Tell: Your party is too large to help me out.
+        TestNoFellow:
+            - Tell: I am not interested in lone meatbags.  We will need a group of several of you, for our purposes.
+
+Refuse: Glyph of Void Magic (43380)
+    - Tell: Energy in this is very weak.
+    - InqQuest: VoidCrystalTurnIn@4
+        QuestSuccess:
+            - Tell: I can however use the energy within it to recharge the void crystal you previously gave me.  It should be enough for me to open another phase shift portal to Lacandrillar.
+            - TakeItems: Glyph of Void Magic (43380)
+            - Goto: RUBusy
+        QuestFailure:
+            - Tell: I might be able use this to recharge a powerful focusing cyrstal, but alone it is of no use to me.
+
+Refuse: Glyph of Nether (43387)
+    - TextDirect: Energy in this is very weak.
+    - InqQuest: VoidCrystalTurnIn@5
+        QuestSuccess:
+            - Tell: I can however use the energy within it to rechare the void crystal you previously gave me.  It should be enough for me to open another phase shift portal to Lacandrillar.
+            - TakeItems: Glyph of Nether (43387)
+            - Goto: RUBusy
+        QuestFailure:
+            - Tell: I might be able use this to recharge a powerful focusing cyrstal, but alone it is of no use to me.
+
+Give: Void Crystal (70289)
+    - Tell: Yes this will do perfectly.
+    - Goto: RUBusy
+
+Give: Void Crystal (80023)
+    - Tell: Yes this will do perfectly.
+    - Goto: RUBusy
+
+Give: 260091
+    - Tell: What is this you give us?  These are most disturbing notes on the deconstructing of devices your kind calls Life Stones.
+    - Tell: What purpose this would have a Virindi is lost to us.
+    - Tell: Their time within the void has certainly twisted their thought and intentions.  They have also begun experimenting on your dead.
+    - Tell: Though they mention in here that living specimens would be preferable.  We would also like to.... errr... never mind.
+    - Tell: We will have to to study these notes further.   In the mean time, here is your reward for this errand.
+    - AwardNoShareXP: 500,000,000
+    - AwardLuminance: 75,000
+    - Give: Box Of Ten Promissory Notes (46435), 3
+
+GotoSet: RUBusy
+    - InqEvent: IncuCell@2
+        EventSuccess:
+            - Tell: I am already assisting another group.  When they have failed, we will let your pitiful group have a try.
+            - Goto: GetLost
+        EventFailure:
+            - Goto: RUReady
+                GotoSet:
+                    - InqYesNo: Is your fellow ready to set forth?  Be warned that you can not take rare gems with you as they destabalize our magic.
+                        TestSuccess:
+                            - InqFellowNum: 1 - 9, HasFellowNum_1-9_8
+                                NumFellowsSuccess:
+                                    - Goto: StartQuest
+                                        GotoSet:
+                                            - StampQuest: VoidCrystalTurnIn
+                                            - StopEvent: IncuCellNormal
+                                            - Motion: Twitch2
+                                            - Motion: Reading
+                                            - StartEvent: IncuCell
+                                            - LockFellow
+                                            - Give: 260105
+                                            - StampFellowQuest: IncuCellFellow
+                                            - FellowBroadcast: Now go and defeat Lacandrillar.  I will hold back his illusion for as long as my mental strength holds.
+                                            - FellowBroadcast: Also remember that you may not take rare gems and jewels along with you inside as they destablize our magics.
+                                NumFellowsFailure:
+                                    - Tell: Your party is too large to assist me.  We can only assist a small stike team.
+                                    - Goto: GetLost
+                                TestNoFellow:
+                                    - Tell: There is no way a single one of your kind can help us.
+                                    - Goto: Getlost
+                        TestFailure:
+                            - Goto: GetLost
+
+GotoSet: GetLost
+    - Tell: We will be here, when the situation is resolved.
+    - InqQuest: VoidCrystalTurnIn@6
+        QuestSuccess:
+            - Give: Glyph of Nether (43387)
+        QuestFailure:
+            - Give: Void Crystal (70289)
+
+Refuse: 260105
+    - InqYesNo: Do you wish to end this quest?
+        TestSuccess:
+            - TakeItems: 260105
+            - Tell: And so we may rest. This has been most draining.
+            - StopEvent: IncuCell
+            - StartEvent: IncucellNormal
+        TestFailure:
+            - Say: Let me know if you change your mind.  It will end when we lose focus eventually.
+
+Give: 221029
+    - Tell: How curious.  This will be of use.
+    - AwardLuminance: 15,000
+
+Give: 221037
+    - Tell: How curious.  This will be of use.
+    - AwardLuminance: 15,000
+
+HeartBeat: Style: HandCombat, Substyle: Ready, Probability: 0.05
+    - Motion: Twitch1
+
+HeartBeat: Style: HandCombat, Substyle: Ready, Probability: 0.075
+    - Motion: Twitch2
+
+HeartBeat: Style: HandCombat, Substyle: Ready, Probability: 0.1
+    - Motion: Twitch3
+
+HeartBeat: Style: NonCombat, Substyle: Ready, Probability: 0.05
+    - Motion: Twitch1
+
+HeartBeat: Style: NonCombat, Substyle: Ready, Probability: 0.075
+    - Motion: Twitch2
+
+HeartBeat: Style: NonCombat, Substyle: Ready, Probability: 0.1
+    - Motion: Twitch3
+
