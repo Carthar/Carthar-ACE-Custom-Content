@@ -10,3 +10,5 @@ The following generators need to be added into a always active landblock as an i
 
 WCID  220011   NQuid StopGap Generator 
 WCID  220147   SQuid StopGap Generator
+
+This content requires the Custom Clothing Base mod.    https://github.com/OptimShi/CustomClothingBase
