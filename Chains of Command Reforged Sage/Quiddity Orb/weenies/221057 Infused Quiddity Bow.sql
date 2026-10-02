@@ -64,6 +64,7 @@ VALUES (221057, 1, 'Infused Quiddity Bow') /* Name */
 INSERT INTO `weenie_properties_d_i_d` (`object_Id`, `type`, `value`)
 VALUES (221057, 1, 0x02000A77) /* Setup */
      , (221057, 3, 0x20000014) /* SoundTable */
+	 , (221057, 7, 0x10001031) /* ClothingBase */
      , (221057, 8, 0x060020CE) /* Icon */
      , (221057, 22, 0x3400002B) /* PhysicsEffectTable */;
 

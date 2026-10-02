@@ -60,6 +60,7 @@ VALUES (221058, 1, 'Infused Quiddity Dagger') /* Name */
 INSERT INTO `weenie_properties_d_i_d` (`object_Id`, `type`, `value`)
 VALUES (221058, 1, 0x02000A71) /* Setup */
      , (221058, 3, 0x20000014) /* SoundTable */
+	 , (221058, 7, 0x10001031) /* ClothingBase */
      , (221058, 8, 0x060020D0) /* Icon */
      , (221058, 22, 0x3400002B) /* PhysicsEffectTable */
      , (221058, 36, 0x0E000014) /* MutateFilter */;

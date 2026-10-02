@@ -62,6 +62,7 @@ VALUES (221055, 1, 'Infused Quiddity Atlatl') /* Name */
 INSERT INTO `weenie_properties_d_i_d` (`object_Id`, `type`, `value`)
 VALUES (221055, 1, 0x02000EB0) /* Setup */
      , (221055, 3, 0x20000014) /* SoundTable */
+	 , (221055, 7, 0x10001031) /* ClothingBase */
      , (221055, 8, 0x060029EB) /* Icon */
      , (221055, 22, 0x3400002B) /* PhysicsEffectTable */;
 

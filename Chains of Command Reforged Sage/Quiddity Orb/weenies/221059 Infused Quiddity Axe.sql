@@ -59,6 +59,7 @@ VALUES (221059, 1, 'Infused Quiddity Axe') /* Name */
 INSERT INTO `weenie_properties_d_i_d` (`object_Id`, `type`, `value`)
 VALUES (221059, 1, 0x02000A70) /* Setup */
      , (221059, 3, 0x20000014) /* SoundTable */
+	 , (221059, 7, 0x10001031) /* ClothingBase */
      , (221059, 8, 0x060020CD) /* Icon */
      , (221059, 19, 0x00000058) /* ActivationAnimation */
      , (221059, 22, 0x3400002B) /* PhysicsEffectTable */

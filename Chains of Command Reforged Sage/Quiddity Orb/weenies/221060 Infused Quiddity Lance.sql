@@ -60,6 +60,7 @@ VALUES (221060, 1, 'Infused Quiddity Lance') /* Name */
 INSERT INTO `weenie_properties_d_i_d` (`object_Id`, `type`, `value`)
 VALUES (221060, 1, 0x02000A74) /* Setup */
      , (221060, 3, 0x20000014) /* SoundTable */
+	 , (221060, 7, 0x10001031) /* ClothingBase */
      , (221060, 8, 0x060020D2) /* Icon */
      , (221060, 22, 0x3400002B) /* PhysicsEffectTable */
      , (221060, 36, 0x0E000014) /* MutateFilter */;

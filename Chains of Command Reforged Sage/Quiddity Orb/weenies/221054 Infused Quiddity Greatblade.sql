@@ -60,6 +60,7 @@ VALUES (221054, 1, 'Infused Quiddity Greatblade') /* Name */
 INSERT INTO `weenie_properties_d_i_d` (`object_Id`, `type`, `value`)
 VALUES (221054, 1, 0x02000A72) /* Setup */
      , (221054, 3, 0x20000014) /* SoundTable */
+	 , (221054, 7, 0x10001031) /* ClothingBase */
      , (221054, 8, 0x06006B95) /* Icon */
      , (221054, 22, 0x3400002B) /* PhysicsEffectTable */
      , (221054, 36, 0x0E000014) /* MutateFilter */;

@@ -59,6 +59,7 @@ VALUES (221052, 1, 'Infused Quiddity Stave') /* Name */
 INSERT INTO `weenie_properties_d_i_d` (`object_Id`, `type`, `value`)
 VALUES (221052, 1, 0x02000A73) /* Setup */
      , (221052, 3, 0x20000014) /* SoundTable */
+	 , (221052, 7, 0x10001031) /* ClothingBase */
      , (221052, 8, 0x060020D3) /* Icon */
      , (221052, 22, 0x3400002B) /* PhysicsEffectTable */
      , (221052, 36, 0x0E000014) /* MutateFilter */;

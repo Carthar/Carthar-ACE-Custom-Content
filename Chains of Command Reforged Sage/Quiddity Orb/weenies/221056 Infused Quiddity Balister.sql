@@ -65,6 +65,7 @@ VALUES (221056, 1, 'Infused Quiddity Balister') /* Name */
 INSERT INTO `weenie_properties_d_i_d` (`object_Id`, `type`, `value`)
 VALUES (221056, 1, 0x02000A78) /* Setup */
      , (221056, 3, 0x20000014) /* SoundTable */
+	 , (221056, 7, 0x10001031) /* ClothingBase */
      , (221056, 8, 0x060020D5) /* Icon */
      , (221056, 22, 0x3400002B) /* PhysicsEffectTable */;
 

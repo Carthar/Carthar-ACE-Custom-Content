@@ -50,6 +50,7 @@ VALUES (221049,   1, 'Infused Eye of the Quiddity') /* Name */
 INSERT INTO `weenie_properties_d_i_d` (`object_Id`, `type`, `value`)
 VALUES (221049,   1, 0x02000A7B) /* Setup */
      , (221049,   3, 0x20000014) /* SoundTable */
+	 , (221049,   7, 0x10001031) /* ClothingBase */
      , (221049,   8, 0x060020CC) /* Icon */
      , (221049,  22, 0x3400002B) /* PhysicsEffectTable */
      , (221049,  27, 0x400000E1) /* UseUserAnimation */
